@@ -1,10 +1,9 @@
-# NL: Mijn Digital Garden
-Mijn studie stimuleert het gebruik en bijhouden van een 'Learning Journal', waar jij je kennis van het vak opslaat en een 'Digital Garden', een speeltuin waar jij je eigen dingen mag doen. Niks moet, alles mag.
+### NL: Mijn FDND Digital Garden
+Tijdens mijn studie probeer ik een Digital Garden bij te houden waar ik experimenten, snippets, en gekke dingen probeer te maken. Verder bevat het ook een 'Learning Journal', dat over verschillende onderwerpen gaan. Uiteindelijk kun je ze zelf online zien.
 
+### EN: My Digital Garden
 
-# EN: My Digital Garden
-
-The university I go to encourage the use of having a Learning Journal and creating (and tending to) a Digital Garden, a playground for experiments involving both webdesign and web development.
+During my studies I'm going to try and maintain a Digital Garden consisting of experiments, snippets, and other crazy things related to web development. It also contains a Learning Journal, that covers a variety of topics. Eventually, you'll be able to read it online.
 
 ## Licentie
 
