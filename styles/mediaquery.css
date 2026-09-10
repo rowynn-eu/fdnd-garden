@@ -1,0 +1,19 @@
+body {
+  background: pink;
+  color: white;
+
+  @media (min-width: 20em) {
+    background: purple;
+
+    ::after {
+    }
+  }
+
+  @media (min-width: 50em) {
+    background: blueviolet;
+  }
+
+  @media (min-width: 80em) {
+    background: blue;
+  }
+}
