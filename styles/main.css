@@ -1,1 +1,130 @@
-/* welcome to my digital garden. here i'll update any experiments i toy with during my college degree. */
+/* 
+welcome to my digital garden.
+here i'll update any experiments i toy with during my college degree.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+/* styling  */
+
+/* 
+colors
+i really like the gruvbox theme, where these colours are derived from. https://github.com/morhetz/gruvbox
+we're making use of light-dark() to clean up and save on lines.
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/light-dark
+*/
+:root {
+  color-scheme: light dark;
+
+  --red: light-dark(#cc241d, #fb4934);
+  --green: light-dark(#98971a, #b8bb26);
+  --yellow: light-dark(#d79921, #fabd2f);
+  --blue: light-dark(#458588, #83a598);
+  --purple: light-dark(#b16286, #d3869b);
+  --aqua: light-dark(#689d6a, #8ec07c);
+  --orange: light-dark(#d65d0e, #fe8019);
+  --gray: light-dark(#7c6f64, #a89984);
+
+  --bg-0: light-dark(#ebdbb2, #282828);
+  --bg-1: light-dark(#d5c4a1, #3c3836);
+  --bg-2: light-dark(#bdae93, #504945);
+  --fg-0: light-dark(#282828, #ebdbb2);
+  --fg-1: light-dark(#3c3836, #d5c4a1);
+  --fg-2: light-dark(#504945, #bdae93);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  transition: color 0.125s ease-in-out;
+  transition: background 0.125s ease-in-out;
+}
+body {
+  /* layout */
+  margin: 2em auto;
+  max-width: 90%;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 0 10px;
+
+  /* fonts */
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+
+  /* colors */
+  color: var(--fg-0);
+  background: var(--bg-0);
+
+  h1 {
+    color: var(--orange);
+  }
+  a {
+    color: var(--blue);
+    text-decoration: double var(--blue);
+    &:hover {
+      color: var(--aqua);
+      transition: color 0.1s ease-in-out;
+    }
+  }
+  hr {
+    border: 1px solid var(--orange);
+  }
+  /* responsive layouts */
+  @media (min-width: 60rem) {
+    width: 60rem;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  button {
+    text-decoration: none;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background: none;
+    height: 2dvh;
+    width: 2em;
+    &:hover {
+      background: var(--fg-0);
+    }
+  }
+}
+
+figure {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 0rem;
+  strong {
+    font-size: 1.25em;
+  }
+  img {
+    max-height: 190px;
+    border-radius: 15%;
+  }
+}
+
+footer {
+  display: flex;
+  gap: 2em;
+  padding: 1em 0;
+  justify-content: center;
+}
+
+.card {
+  background: var(--bg-1);
+  border-radius: 1em;
+  padding: 1rem;
+  margin: 1em;
+  min-width: fit-content;
+  hr {
+    border: 1px solid var(--purple);
+  }
+}
