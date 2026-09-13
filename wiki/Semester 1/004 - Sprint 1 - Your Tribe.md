@@ -69,12 +69,27 @@ Thursday
 - I learned more in depth how to use [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries), and more specifically, how to [nest them](https://github.com/fdnd-task/your-tribe-squad-page/wiki/responsive-design#media-queries) properly. 
 - I'm not sure if I learned how to handle code problems, as I didn't encounter any of them necessarily today, but I did learn about making compromises when it comes to designing pages.
 
+
+**As an aside...**
 I have a sneaking suspicion one of my team members is using generative AI to write their HTML & CSS. My suspicions are grounded on...
 - Not fully understanding the code she wrote
 - Not understanding the habit of pushing and pulling
 - Not understanding the hierarchy of documents and why you shouldn't be working inside the /scripts/ folder if you're working with a html page (which should go into /pages/)
 - Unnecessarily using javascript to force vertical scrolling into horizontal
 - Comments feel.. out of place.
-- Sudden growth in skill of HTML & CSS compared to her profile-card
+- Sudden growth in skill of HTML & CSS compared to their profile-card
 
 It is what it is though. I'm not going to snitch, but like, damn.
+
+
+
+**Friday**
+Turns out that teammate is using Generative AI for their code. Whatever.
+
+I gave and received feedback from David Jak and his team, and also gained feedback from two of my lecturers, specifically, Joost Faber.
+- It's better to use UL if a bunch of articles are nested under a container. In this instance article because that's what they are.
+- Before the weekend begins I want to complete every single thing that affects my .html work, as i'm not going to correct AI generated code.
+- Joost Fabere informed me about a cool property that should be worth checking out, as it may allow me to animate a display: none; block, even if it's a new experimental feature.
+	- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition-behavior
+- I gave feedback to David's team that their sticky position thing wasn't working properly because their breakpoint isnt correct.
+
