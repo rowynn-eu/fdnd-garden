@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <script src="./scripts/theme-toggle.js" defer></script>
   </head>
+  <style>
+    @keyframes sweep {
+      100% {
+        background-position: 200% 0%;
+      }
+    }
+    .pronouns {
+      --pride-1: #e3a24e;
+      --pride-2: #fff0d3;
+      --pride-3: #915e99;
+      --pride-4: #480a2f;
+      background: linear-gradient(
+        90deg,
+        var(--pride-1) 0%,
+        var(--pride-1) 25%,
+        var(--pride-2) 25%,
+        var(--pride-2) 50%,
+        var(--pride-3) 50%,
+        var(--pride-3) 75%,
+        var(--pride-4) 75%,
+        var(--pride-4) 100%
+      );
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: sweep 4s linear infinite reverse;
+      display: inline-block;
+    }
+  </style>
   <body>
     <header>
       <h1>Rowynn's Digital Garden</h1>
@@ -22,109 +53,84 @@
           <div>
             <strong>Rowynn Sewkaransing</strong>
             <p>
-              Ethical creative developer in training, that's fighting for a more
-              inclusive, accessible web.
+              queer web developer (in training) based in Amsterdam, the Netherlands. i like learning about the web and
+              making it a better place.
             </p>
-            <a
-              href="https://en.wikipedia.org/wiki/Singular_they"
-              target="_blank"
-              >(they/them)</a
-            >
+            <span>
+              <strong>
+                my pronouns are
+                <a class="pronouns" href="https://en.wikipedia.org/wiki/Singular_they" target="_blank"> they/them </a>
+                („• ᴗ •„)
+              </strong>
+            </span>
+
             <p>🌱🏳️‍🌈🏳️‍⚧️🇸🇷🇳🇱</p>
           </div>
         </figure>
         <hr />
       </section>
       <article>
-        <h2>Hello!</h2>
+        <h2>Welcome to my digital garden!</h2>
         <p>
-          Welcome to my digital garden. A garden of
-          <a href="./interests.html" target="_blank">interests</a>,
-          <a>ideas</a> and <a href="./experiments.html">experiemnts</a> I'm
-          going to try and maintain and tend to for the next two years during my
-          time at
-          <a href="https://www.amsterdamuas.com/" target="_blank">AUAS</a> while
-          I'm studying
-          <a href="https://fdnd.nl/" target="_blank"
-            >Frontend Design & Development,</a
-          >
-          which is the only two year associate degree programme in the
-          Netherlands that teaches you how to create and build websites in this
-          modern day and age that's tainted by generative AI, vibe-coded
-          websites and the same generic designs that can be found everywhere.
+          This is my garden that will (hopefully) be full of
+          <a href="./interests.html" target="_blank">interests</a>, <a>ideas</a> and
+          <a href="./experiments.html">experiments</a>. I'm going to try and maintain this garden during the next two
+          years at <a href="https://www.amsterdamuas.com/" target="_blank">AUAS</a> while I'm studying
+          <a href="https://fdnd.nl/" target="_blank">Frontend Design & Development,</a>
+          which is the only two year associate degree programme in the Netherlands that teaches you how to create and
+          build websites amidst a world where everyone is generative AI to rot their brain and refuse to learn.
         </p>
         <p>
-          Similar to the <a href="./lecturers.html">lecturers</a> at that
-          programme, I love the web and I want to create memorable experiences
-          with the limited time we have on this planet. For some that's decades,
-          for others it's only a few years.
+          Similar to the <a href="./lecturers.html">lecturers</a> at that programme, I love the web and I want to create
+          memorable experiences with the limited time we have on this planet. For some that's decades, for others it's
+          only a few years.
         </p>
       </article>
       <article>
         <h2>What's a Digital Garden?</h2>
         <p>
-          On October 17, 2015, <em>Mike Caulfield</em> published an essay online
-          known as
-          <a
-            href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/"
-            target="_blank"
+          On October 17, 2015, <em>Mike Caulfield</em> published an essay online known as
+          <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/" target="_blank"
             >The Garden and the Stream</a
           >, which while I haven't read it myself, I attended a lecture by
-          <a href="https://ju5tu5.nl/" target="_blank">Justus Sturkenboom</a>, a
-          real nerd that was yapping for about an hour on how he missed the
-          original, indie web he grew up with and how it's been tainted with by
-          these large corporations that are making a huge profit off of you
-          through the 'algorithm' constantly showing you advertisements which of
-          course, in it of itself are based off of your browsing habits on those
-          sites.
+          <a href="https://ju5tu5.nl/" target="_blank">Justus Sturkenboom</a>, a real nerd that was yapping for about an
+          hour on how he missed the original, indie web he grew up with and how it's been tainted with by these large
+          corporations that are making a huge profit off of you through the 'algorithm' constantly showing you
+          advertisements which of course, in it of itself are based off of your browsing habits on those sites.
         </p>
 
         <p>
-          In particular, Justus argues that websites owned by companies like
-          Meta and X are the ones directly to blame for taining the world wide
-          web, by making it so rather than that you're discovering what's on the
-          internet, you're primarily interacting and submitting forms. There's
-          credibility to this claim: Think about how one would go about posting
-          something on Instagram, X/Twitter, BlueSky or Facebook. In essence,
-          you're essentially submitting a form which is rendered like a post for
-          the rest of the world to see, but only those that fall in line with
-          what that website's algorithm would want to push towards other users.
+          In particular, Justus argues that websites owned by companies like Meta and X are the ones directly to blame
+          for taining the world wide web, by making it so rather than that you're discovering what's on the internet,
+          you're primarily interacting and submitting forms. There's credibility to this claim: Think about how one
+          would go about posting something on Instagram, X/Twitter, BlueSky or Facebook. In essence, you're essentially
+          submitting a form which is rendered like a post for the rest of the world to see, but only those that fall in
+          line with what that website's algorithm would want to push towards other users.
         </p>
         <p>
-          That in particular is important, because if we think back on how the
-          shitshow that was the US Presidential Elections of 2024, Elon Musk
-          spent <em>billions</em> of US Dollars to push conservative republican
-          views onto its users which skewed the algorithm so that Twitter/X uses
-          to supress liberal, left-leaning or democratic views on the platform.
-          And that's besides the investments he has made in Donald Trump's
-          campaign.
+          That in particular is important, because if we think back on how the shitshow that was the US Presidential
+          Elections of 2024, Elon Musk spent <em>billions</em> of US Dollars to push conservative republican views onto
+          its users which skewed the algorithm so that Twitter/X uses to supress liberal, left-leaning or democratic
+          views on the platform. And that's besides the investments he has made in Donald Trump's campaign.
         </p>
         <p>
-          This only reinforces Justus's other argument: The content you create
-          on those platforms are not owned by you, nor is there any guarantee
-          that they would have your interest at heart. If you publish your
-          content on those social medias, you're beholdend to whatever the
-          current owners current terms and policies, but owners are subject to
-          change with time. No one thought that Twitter would fall into Elon
-          Musk's lap, yet it did, only worsening the platform in it's already
-          sorry state at the time.
+          This only reinforces Justus's other argument: The content you create on those platforms are not owned by you,
+          nor is there any guarantee that they would have your interest at heart. If you publish your content on those
+          social medias, you're beholdend to whatever the current owners current terms and policies, but owners are
+          subject to change with time. No one thought that Twitter would fall into Elon Musk's lap, yet it did, only
+          worsening the platform in it's already sorry state at the time.
         </p>
         <p>
           The
-          <a href="https://indieweb.org/" target="_blank">indie web</a> is a
-          solution to this problem. By creating and managing your own website,
-          you are giving yourself the opportunity to foster a home for your own
-          content to thrive, without being subject to another company's terms
-          and services, or being silenced by them due to the views of their
-          current owners. The best way to do this is by using the
-          <a href="https://indieweb.org/POSSE" target="_blank">POSSE</a> method,
-          where you <strong>publish</strong> on your <strong> own site</strong>,
-          yet <strong>syndicate elsewhere</strong>. That means if you want
-          people to see your recent thoughts on something, you post about it on
-          the social media your friends already use, but for your 'full
-          thoughts', link to your site with the associated post. The same can be
-          done with photos! You pick a single photo you like, but if people want
-          to see your full gallery, refer them to your website.
+          <a href="https://indieweb.org/" target="_blank">indie web</a> is a solution to this problem. By creating and
+          managing your own website, you are giving yourself the opportunity to foster a home for your own content to
+          thrive, without being subject to another company's terms and services, or being silenced by them due to the
+          views of their current owners. The best way to do this is by using the
+          <a href="https://indieweb.org/POSSE" target="_blank">POSSE</a> method, where you <strong>publish</strong> on
+          your <strong> own site</strong>, yet <strong>syndicate elsewhere</strong>. That means if you want people to
+          see your recent thoughts on something, you post about it on the social media your friends already use, but for
+          your 'full thoughts', link to your site with the associated post. The same can be done with photos! You pick a
+          single photo you like, but if people want to see your full gallery, refer them to your website.
         </p>
         <p>That way, step by step you'll carve your own path on the web.</p>
       </article>
