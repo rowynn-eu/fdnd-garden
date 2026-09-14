@@ -4,9 +4,6 @@ body {
 
   @media (min-width: 20em) {
     background: purple;
-
-    ::after {
-    }
   }
 
   @media (min-width: 50em) {
