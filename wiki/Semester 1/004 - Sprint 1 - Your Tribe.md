@@ -50,21 +50,19 @@ Wednesday
 Friday
 - - Always come to the CODE-REVIEWS, even if you have very little progress there's a lot of insight to be gleamed at these. In what ways to improve, or otherwise.
 ### Week 2
-
 What did I learn this week?
-
-Maandag
+#### Maandag
 - About CSS Carousel's 
 - chrome.dev [[010 - Questions & Reading List]]
 - How you add people as collaborators to GitHub
 
-Tuesday
+#### Tuesday
 - How to make use of GRID, by completing [Sanne's CSS Grid Challenges](https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_grid.md). [Exercise 1 ](https://github.com/fdnd-task/css-challenges/blob/main/docs/pres/FDND-CSSchallenge1-Grid-oefening1.pdf)and [Exercise 2](https://github.com/fdnd-task/css-challenges/blob/main/docs/pres/FDND-CSSchallenge1-Grid-oefening2.pdf), while sleep deprived.
 
-Wednesday
+#### Wednesday
 - I experimented a lot with CSS-Carousels and finally read that article by Adam Argyle.
 
-Thursday
+#### Thursday
 - I learned about Viewports & Pixels, dpi, and 'pt' (divisions of the phone's pixels to get accurate sizing)
 - I learned more in depth how to use [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries), and more specifically, how to [nest them](https://github.com/fdnd-task/your-tribe-squad-page/wiki/responsive-design#media-queries) properly. 
 - I'm not sure if I learned how to handle code problems, as I didn't encounter any of them necessarily today, but I did learn about making compromises when it comes to designing pages.
@@ -83,7 +81,7 @@ It is what it is though. I'm not going to snitch, but like, damn.
 
 
 
-**Friday**
+#### **Friday**
 Turns out that teammate is using Generative AI for their code. Whatever.
 
 I gave and received feedback from David Jak and his team, and also gained feedback from two of my lecturers, specifically, Joost Faber.
@@ -93,3 +91,18 @@ I gave and received feedback from David Jak and his team, and also gained feedba
 	- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition-behavior
 - I gave feedback to David's team that their sticky position thing wasn't working properly because their breakpoint isnt correct.
 
+
+### Week 3
+
+#### Maandag
+Sanne had mij wat interessante dingen laten zien, en hoe ik `vh` kan gebruiken.
+
+`svh` houdt rekening met de kliene elementen boven op en onderaan van een telefoon, zoals de navigatie balk als de statusbar boven aan. De LVH daarentegen grbu
+
+Note: For example, a browser might implement the default viewport-percentage unit for height (vh) that is equivalent to the large viewport-percentage height unit (lvh). If so, this could obscure content on a full-page display while the browser interface is expanded. Currently, all default viewport units (vh, vw, etc.) are equivalent to their large viewport counterparts (lvh, lvw, etc.).
+
+**Daily Checkout**
+- Op welke manieren kan je visuele hierachie aanbrengen in je ontwerp? Leg ze (kort) uit en voeg een bron toe.
+	- A.d.h.v. grootte. typografie, contrast, kleur, en animaties.
+- Welke niveaus van visuele hierachie heb je geleerd?
+- Wie is Joshua Porter eigenlijk? En wat beodlt hij met zijn quote over visual hierachy? (en voeg de bron over Principles of User Interface Design toe) (of niet)
