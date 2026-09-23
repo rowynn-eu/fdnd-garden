@@ -9,7 +9,7 @@
 [[002 Good & Bad Practices]]
 [[003 - JavaScript]]
 [[004 - Sprint 1 - Your Tribe]]
-[[005 - Sprint 2]]
+[[005 - Sprint 2 - The Client]]
 [[006 - Sprint 3]]
 [[007 - Sprint 5]]
 [[008 - Sprint 4]]
