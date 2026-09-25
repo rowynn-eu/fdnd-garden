@@ -41,7 +41,9 @@ background-image:
 ```
 
 I also learned about some cool shortcuts I want to make!
-- 
+- change from dark to light theme
+- increase or remove contrast
+- set / reduce motion
 
 ## Wednesday
 
@@ -63,3 +65,30 @@ Schetsen heeft ook een communicatieve functie, anderen moeten je schets kunnen '
 
 Schrijf eerst de tekst dan de knoppen of kaders.
 Laat de hierachie in de typogrtafie zien! Belangrijke teksten en titels uitschrijven
+
+## Vrijdag - Code Review
+
+We made code reviews for each other today.
+
+Due to the feedback of a mentor, I learned a bit about HTML formatting and the etiquette regarding that.
+
+I came across these two interesting reads.
+- https://github.com/orgs/mdn/discussions/242
+- https://github.com/validator/validator/wiki/Markup-%C2%BB-Void-elements#trailing-slashes
+- https://github.com/awmottaz/prettier-plugin-void-html
+
+I learned...
+- What void elements are, which is an HTML element that does not have any children.
+- Trailing slahes should not be used to mark start tags as self-closing.
+- It's likely better to not use a formatter that automatically adds trailing slashes to html elements.
+
+I learned from reviewing other people's code that...
+- I don't like unorganized file structures. I will always try to organize my files following a logical order.
+- I like clean code. I will always try to use a formatter,  and provide a .prettiersrc (or other formatter) file in the repository.
+
+The feedback I gave...
+- Was informative for Rayhana, as she immediately understood how she should apply it to have a better structured HTML file.
+
+The feedback I received.
+- I pushed out a solution immediately, making it so that on monday I can continue where I left off and finish the remaining content (or maybe sneak it in during the weekend.)
+- I quite liked the feedback I received and it informed me on my small mistakes, as it lead to the trailing slashes scenario.
