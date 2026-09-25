@@ -40,9 +40,26 @@ background-image:
 	)
 ```
 
+I also learned about some cool shortcuts I want to make!
+- 
+
 ## Wednesday
 
 I learned...
 - a bit more about prototyping, specifically what a [wireflow](https://www.nngroup.com/articles/wireflows/) is, and how it's used here to visualize interactions before you start building a website.
 - I learned how to sketch interactable elements , by giving them a box-shadow / shading.
 - I learned how to properly sketch a sitemap, and that similar websites get a 'stacked' box look.
+
+About Sketching..
+- It's important to add a shadow to elements that can be interacted with
+- When making a sketch, try to include the actual content of the website you're making. No lorem ipsum, or 'title'.
+- When sketching a button, write the text inside of the button first, and then draw the box around it.
+- When 
+
+
+Vier rechte lijnen = een frame of flow of knop...
+
+Schetsen heeft ook een communicatieve functie, anderen moeten je schets kunnen 'lezen': Gebruik een schaduw voor klikbare elementen.
+
+Schrijf eerst de tekst dan de knoppen of kaders.
+Laat de hierachie in de typogrtafie zien! Belangrijke teksten en titels uitschrijven

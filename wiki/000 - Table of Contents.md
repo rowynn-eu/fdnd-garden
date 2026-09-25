@@ -10,9 +10,9 @@
 [[003 - JavaScript]]
 [[004 - Sprint 1 - Your Tribe]]
 [[005 - Sprint 2 - The Client]]
-[[006 - Sprint 3]]
-[[007 - Sprint 5]]
-[[008 - Sprint 4]]
-[[009 - Sprint 6]]
+[[006 - Sprint 3 - All Human]]
+[[007 - Sprint 4 - Look and Feel]]
+[[008 - Sprint 5 - Fix the Flow]]
+[[009 - Sprint 6 - The Startup]]
 [[010 - Questions & Reading List]]
 
