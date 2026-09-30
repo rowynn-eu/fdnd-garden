@@ -4,5 +4,5 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true,
-    "plugins": ["@awmottaz/prettier-plugin-void-html", "@zetafield/prettier-plugin-css-singleline"]
+    "plugins": ["@awmottaz/prettier-plugin-void-html"]
 }
