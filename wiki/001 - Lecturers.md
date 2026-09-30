@@ -10,6 +10,6 @@ Regardless, I've tried to collect all of what they say under [[002 Good & Bad Pr
 | [Joost Faber](https://github.com/joostf)                      | Woensdag | Vrijdag  |
 | [Justus Sturkenboom](https://ju5tu5.nl/)                      | Dinsdag  | ???      |
 | [Koop Reynders](https://koopreynders.github.io/profile-card/) | Maandag  | Woensdag |
-| [Krijn Hoetmer](https://krijnhoetmer.nl/)                     | Woensdag | ???      |
+| [Krijn Hoetmer](https://krijnhoetmer.nl/)                     | Woensdag | Vrijdag  |
 | [Sanne Hooft](https://sinds1971.nl/)                          | Maandag  | Dinsdag  |
 | [Suus ten Voorde](https://suustenvoorde.nl/)                  | Maandag  | Vrijdag  |
