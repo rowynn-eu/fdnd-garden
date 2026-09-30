@@ -83,7 +83,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     button {
         text-decoration: none;
         border: 1px solid var(--orange);
