@@ -41,7 +41,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     color-scheme: dark;
 }
 
-* {
+*::before, *, *::after {
+    box-sizing:border-box;
     transition: color 0.125s ease-in-out;
     transition: background 0.125s ease-in-out;
 }
