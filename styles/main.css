@@ -49,14 +49,13 @@ body {
     /* layout */
     margin: 2em auto;
     max-width: 90%;
-    line-height: 1.6;
-    font-size: 18px;
     padding: 0 10px;
 
     /* fonts */
     font-family: 'Inconsolata', monospace;
     font-optical-sizing: auto;
-
+    line-height: 1.4;
+    font-size: 1.125rem;
     /* colors */
     color: var(--fg-0);
     background: var(--bg-0);
@@ -76,8 +75,9 @@ body {
         border: 1px solid var(--orange);
     }
     /* responsive layouts */
-    @media (min-width: 60rem) {
-        width: 60rem;
+    @media (min-width: 50rem) {
+        width: 50rem;
+
     }
 }
 
