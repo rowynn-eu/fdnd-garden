@@ -8,7 +8,7 @@ Regardless, I've tried to collect all of what they say under [[002 Good & Bad Pr
 | Lecturer                                                      | Dagen    |          |
 | ------------------------------------------------------------- | -------- | -------- |
 | [Joost Faber](https://github.com/joostf)                      | Woensdag | Vrijdag  |
-| [Justus Sturkenboom](https://ju5tu5.nl/)                      | Dinsdag  | ???      |
+| [Justus Sturkenboom](https://ju5tu5.nl/)                      | Dinsdag  | ???ºº    |
 | [Koop Reynders](https://koopreynders.github.io/profile-card/) | Maandag  | Woensdag |
 | [Krijn Hoetmer](https://krijnhoetmer.nl/)                     | Woensdag | Vrijdag  |
 | [Sanne Hooft](https://sinds1971.nl/)                          | Maandag  | Dinsdag  |
