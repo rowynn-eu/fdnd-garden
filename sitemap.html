@@ -13,17 +13,18 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 justify-items: center;
-                
+
                 p {
                     padding-left: 1em;
-                    border-left: 2px var(--orange) solid;}
+                    border-left: 2px var(--orange) solid;
+                }
 
                 img {
                     display: block;
                     max-height: 100px;
                 }
                 h1 {
-                    text-align:center;
+                    text-align: center;
                 }
             }
             div {
@@ -34,35 +35,41 @@
                 @media (min-width: 700px) {
                     grid-template-columns: repeat(2, minmax(0, 1fr));
                     gap: 2em;
-                    ul {text-align:left;}
+                    ul {
+                        text-align: left;
+                    }
                 }
                 @media (min-width: 900px) {
                     grid-template-columns: repeat(3, minmax(0, 1fr));
                     gap: 3em;
-                    ul {text-align:left;}
+                    ul {
+                        text-align: left;
+                    }
                 }
             }
 
             ul {
                 justify-self: center;
-                list-style:none;
+                list-style: none;
                 margin-left: 0;
                 padding-left: 0;
-                    
-                li {            
-                    ::before {
-                    content:".";
-                }
-            }
 
+                li {
+                    ::before {
+                        content: '.';
+                    }
+                }
             }
         </style>
     </head>
     <body>
-        
         <main>
             <h1>网站地图</h1>
-            <p>A sitemap is a structured list of pages on a website that helps people and software discover content. Sitemaps can be human-readable HTML pages designed for visitors, machine-readable XML files intended for search engines, or both. <a href="https://indieweb.org/sitemap" target="_blank">- IndieWeb</a></p>
+            <p>
+                A sitemap is a structured list of pages on a website that helps people and software discover content.
+                Sitemaps can be human-readable HTML pages designed for visitors, machine-readable XML files intended for
+                search engines, or both. <a href="https://indieweb.org/sitemap" target="_blank">- IndieWeb</a>
+            </p>
 
             <div>
                 <ul>
@@ -131,9 +138,10 @@
                     <li><a href="./verify.html" target="_blank">/verify</a></li>
                     <li><a href="./where.html" target="_blank">/where</a></li>
                     <li><a href="./why.html" target="_blank">/why</a></li>
-                    <li><a href="./wish.html" target="_blank">/wish</a></li>
+                    <li><a href="./wiki.html" target="_blank">/wiki</a></li>
                 </ul>
                 <ul>
+                    <li><a href="./wish.html" target="_blank">/wish</a></li>
                     <li><a href="./yep" target="_blank">/yep</a></li>
                     <!-- <li><a href="./" target="_blank"> </a></li>
                     <li><a href="./" target="_blank"> </a></li>
@@ -145,8 +153,7 @@
                     <li><a href="./" target="_blank"> </a></li> -->
                 </ul>
             </div>
-                        <img src="./assets/rocho.gif" alt="Animation of a masked creature standing.">
-
+            <img src="./assets/rocho.gif" alt="Animation of a masked creature standing.">
         </main>
         <footer>
             <nav>
