@@ -33,16 +33,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     --fg-2: light-dark(#504945, #bdae93);
 }
 
-:root[data-theme='light'] {
-    color-scheme: light;
-}
-
-:root[data-theme='dark'] {
-    color-scheme: dark;
-}
-
-*::before, *, *::after {
-    box-sizing:border-box;
+*::before,
+*,
+*::after {
+    box-sizing: border-box;
     transition: color 0.125s ease-in-out;
     transition: background 0.125s ease-in-out;
 }
@@ -78,7 +72,6 @@ body {
     /* responsive layouts */
     @media (min-width: 50rem) {
         width: 50rem;
-
     }
 }
 
