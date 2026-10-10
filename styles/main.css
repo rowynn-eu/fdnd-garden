@@ -43,7 +43,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
 body {
     /* layout */
     margin: 2em auto;
-    max-width: 90%;
     padding: 0 10px;
 
     /* fonts */
@@ -54,7 +53,9 @@ body {
     /* colors */
     color: var(--fg-0);
     background: var(--bg-0);
-
+    article {
+        max-width: 70ch;
+    }
     h1 {
         color: var(--orange);
     }
