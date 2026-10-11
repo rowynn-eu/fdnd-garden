@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>memories.</title>
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            header {
+                display: block;
+                > ul {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                > p {
+                    border-left: 0.25em solid var(--orange);
+                    padding-left: 0.5em;
+                }
+            }
+
+            main {
+                padding-top: 2em;
+                display: grid;
+                grid-template-columns: 1fr;
+                span {
+                    color: var(--orange);
+                }
+                section {
+                    display: none;
+                    img {
+                        border: 0.25em solid var(--orange);
+                    }
+                    &:target {
+                        display: block;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>...</h1>
+
+            <ul>
+                <li><a href="#2009">2009</a></li>
+                <li><a href="#2013">2013</a></li>
+                <li><a href="#2017">2017</a></li>
+                <li><a href="#2020">2020</a></li>
+                <li><a href="#2025">2025</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section id="2009">
+                <h2>hometown</h2>
+                <p>
+                    <span>remember:</span> exploring the skeuomorphic web, NewGrounds, Youtube and many personal websites on the family
+                    computer running Windows XP.
+                </p>
+                <p><span>miss:</span> quiet summer days and the view of the street from my bedroom.</p>
+                <p><span>honest:</span> i don't miss the people, the fighting, or the abuse.</p>
+                <p><span>carry:</span> you do not need a divine-given reason to exist.</p>
+            </section>
+
+            <section id="2013">
+                <h2>gaming before 2013</h2>
+                <p><span>remember:</span> the excitement of wanting to playing a game.</p>
+                <p><span>miss:</span> games that were developed with love, purpose, and identity.</p>
+                <p>
+                    <span>honest:</span> i think from this point onward, developing a game shifted from selling art to selling a product or
+                    live-service.
+                </p>
+                <p>
+                    <span>carry:</span> games are a form of art. the experience that is being meticulously crafted to convey a particular
+                    narrative is more important than making something that sells.
+                </p>
+            </section>
+            <section id="2017">
+                <h2>my former self</h2>
+                <p><span>remember:</span> the hurt i inflicted. how scared and alone i was.</p>
+                <p><span>miss:</span> the praise.</p>
+                <p><span>honest:</span> i was disingenous.</p>
+                <p><span>carry:</span> you can't have a sense of belonging if it means hiding who you truly are.</p>
+            </section>
+            <section id="2020">
+                <h2>dysphoria</h2>
+                <p><span>remember:</span> my skin crawling as i realized what puberty had done to me, a late bloomer.</p>
+                <p><span>miss:</span> when i was depressed and only worried about my lack of a future.</p>
+                <p><span>carry:</span> everyone needs therapy.</p>
+            </section>
+            <section id="2025">
+                <h2>legacy</h2>
+                <p>
+                    <span>remember:</span> his undying devotion to his family. the brass instruments that commemorated his passing into the
+                    next.
+                </p>
+                <p><span>miss:</span> his laugh, smile and acceptance.</p>
+                <p><span>honest:</span> it hurts me that i never got to tell him who i truly am.</p>
+                <p><span>carry:</span> no one should dictate or determine what it means to live <em>your</em> life.</p>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./about.html">/about</a>
+                <a href="https://www.rowynn.eu" target="_blank">/main</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./links.html">/links</a>
+            </nav>
+        </footer>
+    </body>
+</html>
