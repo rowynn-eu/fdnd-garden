@@ -53,9 +53,7 @@ body {
     /* colors */
     color: var(--fg-0);
     background: var(--bg-0);
-    article {
-        max-width: 70ch;
-    }
+
     h1 {
         color: var(--orange);
     }
@@ -72,7 +70,12 @@ body {
     }
     /* responsive layouts */
     @media (min-width: 800px) {
-        width: 800px;
+        width: 700px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
