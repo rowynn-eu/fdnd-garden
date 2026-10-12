@@ -54,6 +54,7 @@ body {
     /* fonts */
 
     font-family: 'Iosevka Etoile Web', serif;
+    font-weight: 400;
 
     h1,
     h2,
@@ -64,6 +65,7 @@ body {
     nav,
     button {
         font-family: 'Iosevka Aile Web', system-ui, sans-serif;
+        font-weight: 500;
     }
 
     code,
@@ -71,10 +73,22 @@ body {
     kbd,
     samp {
         font-family: 'Iosevka Web', monospace;
+        font-weight: 400;
+    }
+
+    a {
+        &::after {
+            display: inline-block;
+            content: '◥';
+            margin-left: -0.25em;
+            font-size: 0.5em;
+            font-weight: 700;
+            translate: 0 -1em;
+        }
     }
 
     font-optical-sizing: auto;
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 1rem;
 
     /* colors */
@@ -103,7 +117,8 @@ body {
 }
 
 article {
-    margin: 1em;
+    display: grid;
+    margin: 0 1em;
 }
 
 header {
