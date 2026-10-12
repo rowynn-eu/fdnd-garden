@@ -3,9 +3,9 @@ welcome to my digital garden.
 here i'll update any experiments i toy with during my college degree.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-
-/* styling  */
+@import url('../fonts/Iosevka-34.9.0/Iosevka.css');
+@import url('../fonts/IosevkaAile-34.9.0/IosevkaAile.css');
+@import url('../fonts/IosevkaEtoile-34.9.0/IosevkaEtoile.css');
 
 /* 
 colors
@@ -45,11 +45,38 @@ body {
     margin: 2em auto;
     padding: 0 10px;
 
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
     /* fonts */
-    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Iosevka Etoile Web', serif;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    nav,
+    button {
+        font-family: 'Iosevka Aile Web', sans-serif;
+    }
+
+    code,
+    pre,
+    kbd,
+    samp {
+        font-family: 'Iosevka Web', monospace;
+    }
+
     font-optical-sizing: auto;
     line-height: 1.4;
     font-size: 1.125rem;
+
     /* colors */
     color: var(--fg-0);
     background: var(--bg-0);
@@ -68,14 +95,10 @@ body {
     hr {
         border: 1px solid var(--orange);
     }
+
     /* responsive layouts */
     @media (min-width: 800px) {
         width: 700px;
-    }
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
     }
 }
 
