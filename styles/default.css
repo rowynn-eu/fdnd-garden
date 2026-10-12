@@ -63,7 +63,7 @@ body {
     h6,
     nav,
     button {
-        font-family: 'Iosevka Aile Web', sans-serif;
+        font-family: 'Iosevka Aile Web', system-ui, sans-serif;
     }
 
     code,
@@ -75,7 +75,7 @@ body {
 
     font-optical-sizing: auto;
     line-height: 1.4;
-    font-size: 1.125rem;
+    font-size: 1rem;
 
     /* colors */
     color: var(--fg-0);
@@ -97,9 +97,13 @@ body {
     }
 
     /* responsive layouts */
-    @media (min-width: 800px) {
-        width: 700px;
+    @media (min-width: 710px) {
+        width: 710px;
     }
+}
+
+article {
+    margin: 1em;
 }
 
 header {
