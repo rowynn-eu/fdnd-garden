@@ -62,10 +62,9 @@ body {
     h4,
     h5,
     h6,
-    nav,
     button {
         font-family: 'Iosevka Aile Web', system-ui, sans-serif;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     code,
@@ -164,4 +163,64 @@ footer {
     hr {
         border: 1px solid var(--purple);
     }
+}
+
+.red {
+    color: var(--red);
+    font-weight: 500;
+}
+.green {
+    color: var(--green);
+    font-weight: 500;
+}
+.yellow {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.blue {
+    color: var(--blue);
+    font-weight: 500;
+}
+.purple {
+    color: var(--purple);
+    font-weight: 500;
+}
+.aqua {
+    color: var(--aqua);
+    font-weight: 500;
+}
+.orange {
+    color: var(--orange);
+    font-weight: 500;
+}
+.gray {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.red-bg {
+    background-color: var(--red);
+}
+.green-bg {
+    background-color: var(--green);
+}
+.yellow-bg {
+    background-color: var(--yellow);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+.purple-bg {
+    background-color: var(--purple);
+}
+.aqua-bg {
+    background-color: var(--aqua);
+}
+.orange-bg {
+    background-color: var(--orange);
+}
+.gray-bg {
+    background-color: var(--gray);
 }
