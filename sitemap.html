@@ -30,25 +30,21 @@
                 display: grid;
                 grid-template-columns: minmax(0, 1fr);
                 gap: 1em;
+                ul {
+                    text-align: left;
+                }
 
                 @media (min-width: 700px) {
                     grid-template-columns: repeat(2, minmax(0, 1fr));
                     gap: 2em;
-                    ul {
-                        text-align: left;
-                    }
                 }
                 @media (min-width: 900px) {
                     grid-template-columns: repeat(3, minmax(0, 1fr));
                     gap: 3em;
-                    ul {
-                        text-align: left;
-                    }
                 }
             }
 
             ul {
-                justify-self: center;
                 list-style: none;
                 margin-left: 0;
                 padding-left: 0;
@@ -150,7 +146,7 @@
                     <li><a href="./yep" target="_blank">/yep</a></li>
                 </ul>
             </div>
-            <img src="./assets/rocho.gif" alt="Animation of a masked creature standing.">
+            <img src="./assets/rocho.gif" alt="Animation of a masked goat creature standing around." aria-hidden="true">
         </main>
         <footer>
             <nav>
