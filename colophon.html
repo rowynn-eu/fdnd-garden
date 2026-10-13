@@ -3,9 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>brick by brick</title>
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
-    <body></body>
+    <body>
+        <main>
+            <article>
+                <h1>How This Site Is Made</h1>
+                <p>all content on this site, unless otherwise noted (such as a quote), is written by hand by me, rowynn!</p>
+                <h2>developing the website</h2>
+                <p>
+                    the development of this website is pretty straightforward. everything is written and built by hand using HTML and
+                    vanilla CSS and JS. if it isn't broken, why fix it?
+                </p>
+                <p>
+                    there are some edge cases though. e.g. <a href="./wiki.html">./wiki</a> using JS to parse markdown to viewable HTML with
+                    a table of contents in an <code>&lt;aside&gt;</code>, which some may consider unnecessary as you could just write your
+                    notes in HTML, but.. i use obsidian.md in my ./wiki directory to take my notes...
+                </p>
+                <p>
+                    the website itself is hosted through GitHub pages on this
+                    <a href="https://github.com/rowynn-eu/fdnd-garden" target="_blank" rel="noopener noreferrer">repository</a>, pointing to
+                    this subdomain <code>fdnd.rowynn.eu</code>, away from the main webstie which desperately (as of writing this) needs a
+                    proper portfolio design.
+                </p>
+                <p>there's also a <code>robot.txt</code> file in the root directory that tells scrapers to buzz off...</p>
+                <p>
+                    lastly, as encouraged by <a href="https://sinds1971.nl" target="_blank" rel="noopener noreferrer">Sanne</a>, i'm trying
+                    to avoid making classes and using semantic HTML whenever possible.
+                </p>
+                <p>
+                    eventually, it's important to me that thsi website is WCAG compliant, as i'm an
+                    <a href="https://a11yproject.com" target="_blank" rel="noopener noreferrer">a11y</a>.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./about.html">/about</a>
+                <a href="./">/home</a>
+                <a href="./memories.html">/memories</a>
+                <a href="./links.html">/links</a>
+            </nav>
+        </footer>
+    </body>
 </html>
