@@ -104,7 +104,7 @@ body {
             color: var(--aqua);
             /* transition: color 0s ease-in-out; */
             position: relative;
-            top: 1px;
+            top: -1px;
         }
     }
     hr {

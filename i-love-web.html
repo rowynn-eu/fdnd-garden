@@ -7,92 +7,270 @@
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <style>
-            article:target {
-                background-color: var(--bg-1);
-                border-radius: 0.25em;
-                padding: 1em;
+            body {
+                overflow-x: hidden;
             }
-
-            main > ul {
-                border-bottom: 0.125em solid var(--orange);
+            main {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-area: 'nav' 'div';
                 padding-bottom: 1em;
+
+                &:has(article:target) section {
+                    display: none;
+                }
+
+                ol {
+                    list-style-type: decimal-leading-zero;
+                    padding-left: 1.5em;
+                }
             }
 
-            article > hr {
-                border: 1px solid var(--gray);
-                width: 90%;
+            nav[aria-label='table-of-contents'] {
+                z-index: 1;
+            }
+
+            nav > li {
+                padding-bottom: 2em;
+            }
+
+            article {
+                display: none;
+                text-wrap-style: pretty;
+                &:target {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-color: var(--bg-1);
+                    border-radius: 0.25em;
+                    padding: 1em;
+                }
+                & > hr {
+                    border: 1px solid var(--gray);
+                    width: 90%;
+                }
+                li {
+                    overflow-wrap: anywhere;
+                }
             }
         </style>
     </head>
 
     <body>
+        <h1>i &hearts; web</h1>
+
         <main>
-            <h1>i ♥ web</h1>
-            <p>thoughts, musings, notes during lectures.</p>
-            <ul>
-                <li><a href="#110926">11 september 2026</a></li>
-                <li><a href="#021026">02 october 2026</a></li>
-                <li><a href="#231026">23 october 2026</a></li>
-            </ul>
+            <nav aria-label="table-of-contents">
+                <h3>Year 1</h3>
+                <ol>
+                    <li><a href="#wlw1">18/09</a></li>
+                    <li><a href="#wlw2">02/10</a></li>
+                    <li><a href="#wlw3">23/10</a></li>
+                    <li><a href="#wlw4">20/11</a></li>
+                    <li><a href="#wlw5">11/12</a></li>
+                    <li><a href="#wlw6">15/01</a></li>
+                    <li><a href="#wlw7">12/02</a></li>
+                    <li><a href="#wlw8">05/03</a></li>
+                    <li><a href="#wlw9">26/03</a></li>
+                    <li><a href="#wlw10">23/04</a></li>
+                    <li><a href="#wlw11">21/05</a></li>
+                    <li><a href="#wlw12">11/06</a></li>
+                </ol>
+                <h3>Year 2</h3>
+                <ol start="13">
+                    <li><a href="#wlw13">...</a></li>
+                    <li><a href="#wlw14">... </a></li>
+                    <li><a href="#wlw15">... </a></li>
+                    <li><a href="#wlw16">... </a></li>
+                    <li><a href="#wlw17">... </a></li>
+                    <li><a href="#wlw18">... </a></li>
+                    <li><a href="#wlw19">... </a></li>
+                    <li><a href="#wlw20">... </a></li>
+                    <li><a href="#wlw21">... </a></li>
+                    <li><a href="#wlw22">... </a></li>
+                    <li><a href="#wlw23">... </a></li>
+                    <li><a href="#wlw24">... </a></li>
+                </ol>
+            </nav>
+            <div>
+                <section id="#">
+                    <h2>Using this page...</h2>
+                    <p>Use the Table of Contents on the left to navigate to an article.</p>
+                    <p>...Viewed best on a medium screen (>400px)</p>
+                </section>
+                <article id="wlw1">
+                    <h2>The Indie Web w/ Justus Sturkenboom</h2>
+                    <p>
+                        In this lecture, Justus explained his experience with the Internet growing up, how it differs from what it is today,
+                        and how he believes the right way is the combat the boring, corporate web.
+                    </p>
 
-            <article>
-                <h2>Wait... What's a <em>Digital Garden</em>?</h2>
-                <p>
-                    On October 17, 2015, <em>Mike Caulfield</em> published an essay online known as
-                    <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/" target="_blank"
-                        >The Garden and the Stream</a
-                    >, which while I haven't read it myself, I attended a lecture by
-                    <a href="https://ju5tu5.nl/" target="_blank">Justus Sturkenboom</a>, a real nerd that was yapping for about an hour on
-                    how he missed the original, indie web he grew up with and how it's been tainted with by these large corporations that
-                    are making a huge profit off of you through the 'algorithm' constantly showing you advertisements which of course, in it
-                    of itself are based off of your browsing habits on those sites.
-                </p>
+                    <p>
+                        He showcased some of his favourite websites on the IndieWeb and explained the concept of webrings, and how those
+                        indei websites are connected with one another. He mentioned Neocities, and even the older Geocities.
+                    </p>
+                    <p>
+                        Really, the core of his message is to start owning your own content. This is best done by
+                        <a href="https://indieweb.org/POSSE" target="_blank" rel="noopener noreferrer"
+                            >publishing on your own site, and syndicating elsewhere</a
+                        >, meaning if you want to share your cool photos, blogposts, or releases, tweet about it with a link back to your
+                        own website.
+                    </p>
+                    <p>That website could be a digital garden (see homepage...), a blog, or anything else really. It's your website!</p>
+                    <p>I've chosen my favourite examples that he showcased and linked them here, they are definitely worth checking out.</p>
+                    <ul>
+                        <li><a href="https://nobodyhere.com" target="_blank" rel="noopener noreferrer">nobodyhere.com</a></li>
+                        <li><a href="https://ribo.zone" target="_blank" rel="noopener noreferrer">ribo.zone</a></li>
+                        <li>
+                            <a href="https://solar.lowtechmagazine.com/" target="_blank" rel="noopener noreferrer"
+                                >solar.lowtechmagazine.com</a
+                            >
+                        </li>
+                    </ul>
+                </article>
 
-                <p>
-                    In particular, Justus argues that websites owned by companies like Meta and X are the ones directly to blame for taining
-                    the world wide web, by making it so rather than that you're discovering what's on the internet, you're primarily
-                    interacting and submitting forms. There's credibility to this claim: Think about how one would go about posting
-                    something on Instagram, X/Twitter, BlueSky or Facebook. In essence, you're essentially submitting a form which is
-                    rendered like a post for the rest of the world to see, but only those that fall in line with what that website's
-                    algorithm would want to push towards other users.
-                </p>
+                <article id="wlw2">
+                    <h2>werktijden.nl w/ Tom Poortman and Tom Deeterink</h2>
+                    <p>
+                        Their lecture was interesting. I was able to get insight into how their business runs, and how they deliver products
+                        to their clients. Prior to joining, one of these ex-students quit and became a product manager, where-as the other
+                        graduated and became a junior developer.
+                    </p>
+                    <p>
+                        The company's workethic was... chaotic until they implemented a variant of scrum. They like attributing a certain
+                        amount of points to each issue to get an estimate on how long it'll take to resolve it, and then they start
+                        developing to resolve that problem.
+                    </p>
+                    <p>
+                        The issue can be comprised of feedback from a client, or something they've noticed internally that they want to
+                        improve. Eitherway, they try to resolve it immediately, and determine how urgent it is. If it's a bug, it's number
+                        one priority.
+                    </p>
+                    <p>
+                        Other cool insights were that they tend to listen to the feedback of the majority of clients, rather than the
+                        request of a single, larger client as they value networking and a steady clientbase more than making a single client
+                        happy.
+                    </p>
+                    <p>
+                        They get a downside from me that accessibility is not a priority or interest in their company, and during their
+                        live-coding session we even spotted a bug about how their proposed solution of adding a hover state to see the
+                        weather on that day won't work for someone on mobile, as they don't have hover states there.
+                    </p>
+                    <p>There was some takeaway though. A solid plan leads to a solid project board.</p>
+                </article>
 
-                <p>
-                    That in particular is important, because if we think back on how the shitshow that was the US Presidential Elections of
-                    2024, Elon Musk spent <em>billions</em> of US Dollars to push conservative republican views onto its users which skewed
-                    the algorithm so that Twitter/X uses to supress liberal, left-leaning or democratic views on the platform. And that's
-                    besides the investments he has made in Donald Trump's campaign.
-                </p>
+                <article id="wlw3">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.</p>
+                </article>
 
-                <p>
-                    This only reinforces Justus's other argument: The content you create on those platforms are not owned by you, nor is
-                    there any guarantee that they would have your interest at heart. If you publish your content on those social medias,
-                    you're beholdend to whatever the current owners current terms and policies, but owners are subject to change with time.
-                    No one thought that Twitter would fall into Elon Musk's lap, yet it did, only worsening the platform in it's already
-                    sorry state at the time.
-                </p>
+                <article id="wlw4">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet..</p>
+                </article>
 
-                <p>
-                    The
-                    <a href="https://indieweb.org/" target="_blank">indie web</a> is a solution to this problem. By creating and managing
-                    your own website, you are giving yourself the opportunity to foster a home for your own content to thrive, without being
-                    subject to another company's terms and services, or being silenced by them due to the views of their current owners. The
-                    best way to do this is by using the <a href="https://indieweb.org/POSSE" target="_blank">POSSE</a> method, where you
-                    <strong>publish</strong> on your <strong> own site</strong>, yet <strong>syndicate elsewhere</strong>. That means if you
-                    want people to see your recent thoughts on something, you post about it on the social media your friends already use,
-                    but for your 'full thoughts', link to your site with the associated post. The same can be done with photos! You pick a
-                    single photo you like, but if people want to see your full gallery, refer them to your website.
-                </p>
-                <p>That way, step by step you'll carve your own path on the web.</p>
-            </article>
+                <article id="wlw5">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet...</p>
+                </article>
+
+                <article id="wlw6">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet....</p>
+                </article>
+
+                <article id="wlw7">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.....</p>
+                </article>
+
+                <article id="wlw8">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet......</p>
+                </article>
+
+                <article id="wlw9">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.......</p>
+                </article>
+
+                <article id="wlw10">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet........</p>
+                </article>
+
+                <article id="wlw11">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.........</p>
+                </article>
+
+                <article id="wlw12">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet..........</p>
+                </article>
+
+                <article id="wlw13">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet...........</p>
+                </article>
+
+                <article id="wlw14">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet............</p>
+                </article>
+
+                <article id="wlw15">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.............</p>
+                </article>
+
+                <article id="wlw16">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet..............</p>
+                </article>
+
+                <article id="wlw17">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet...............</p>
+                </article>
+
+                <article id="wlw18">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet................</p>
+                </article>
+
+                <article id="wlw19">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.................</p>
+                </article>
+
+                <article id="wlw20">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet..................</p>
+                </article>
+
+                <article id="wlw21">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet...................</p>
+                </article>
+
+                <article id="wlw22">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet....................</p>
+                </article>
+
+                <article id="wlw23">
+                    <h2>We &hearts; Web</h2>
+                    <p>This lecture hasn't happened yet.....................</p>
+                </article>
+
+                <article id="wlw24">
+                    <h2>We &hearts; Web</h2>
+                    <p>bruh</p>
+                </article>
+            </div>
         </main>
 
         <footer>
-            <p>
-                this page is inspired by
-                <a href="https://slashpages.net/#ideas" target="_blank" rel="noopener noreferrer">/ideas</a>
-            </p>
-
             <nav>
                 <a href="./wiki.html">/wiki</a>
                 <a href="./links.html">/links</a>
