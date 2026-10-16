@@ -6,9 +6,255 @@
         <title>canon - rowynn.eu</title>
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            h2 {
+                border-top: 2px solid var(--orange);
+                padding: 1em;
+            }
+
+            /* https://chrome.dev/carousel-configurator */
+            /* CSS Challenge 4 */
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                display: flex;
+                overflow-x: auto;
+                overscroll-behavior-x: contain;
+                scroll-snap-type: x mandatory;
+                anchor-name: --carousel;
+                anchor-scope: --carousel;
+                scroll-marker-group: after;
+
+                &::scroll-button(*) {
+                    color: var(--fg-0);
+                    background: var(--bg-2);
+                    border: 1px solid var(--orange);
+                    width: 3rem;
+                    height: 3rem;
+                    position: fixed;
+                    position-anchor: --carousel;
+                    position-visibility: always;
+                    font-family: 'Iosevka Web';
+                }
+
+                &::scroll-button(right) {
+                    position-area: inline-end center;
+                    content: '→' / 'Next';
+                }
+
+                &::scroll-button(left) {
+                    position-area: inline-start center;
+                    content: '←' / 'Previous';
+                }
+
+                &::scroll-marker-group {
+                    position: fixed;
+                    position-anchor: --carousel;
+                    position-area: block-end;
+                    position-visibility: always;
+                    margin: 1em;
+
+                    display: grid;
+                    grid-auto-columns: 10px;
+                    grid-auto-flow: column;
+                    gap: 1em;
+                }
+
+                > li {
+                    &::scroll-marker {
+                        content: '' / attr(aria-label);
+                    }
+
+                    &::scroll-marker:target-current {
+                        background: var(--accent);
+                    }
+                    scroll-snap-align: center;
+                    scroll-snap-stop: always;
+                }
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-basis: 100%;
+                    flex-shrink: 0;
+                    padding: 1em;
+                    img {
+                        display: block;
+                        aspect-ratio: 1.33 / 2;
+                        object-fit: fill;
+                        width: 50%;
+                        height: auto;
+                        border: 0.125em solid var(--orange);
+                    }
+                    a {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .music {
+                img {
+                    aspect-ratio: 1 /1;
+                }
+            }
+        </style>
     </head>
     <body>
-        <main>it's rather empty here... come back later?</main>
+        <main>
+            <h1>personal canon</h1>
+            <p>a list of media, fictional or otherwise that have most influenced my life.</p>
+            <p>
+                i feel obligated to remain a bit vague about these works, and i suggest you read them blind, even with my summaries of them.
+            </p>
+
+            <section>
+                <h2>writings</h2>
+                <p>literature, web serials, written media.</p>
+                <ul>
+                    <li aria-label="Worm">
+                        <img src="./assets/books/worm.png" alt="">
+                        <p>a story about a broken girl with bug powers doing the right thing for the wrong reasons.</p>
+                        <a href="https://parahumans.wordpress.com/2011/06/11/1-1/" target="_blank" rel="noopener noreferrer"
+                            >Read online for free here</a
+                        >
+                    </li>
+
+                    <li aria-label="I'm Glad My Mom Died">
+                        <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1649228846i/59366244.jpg" alt="">
+                        <p>somehow, Jennette paints tragedy as comedy in her memoir about her mother.</p>
+                        <a
+                            href="https://www.goodreads.com/en/book/show/59366244-i-m-glad-my-mom-died"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Goodreads</a
+                        >
+                    </li>
+
+                    <li aria-label="How To Argue With A Meat Eater (And Win Every Time)">
+                        <img src="https://m.media-amazon.com/images/I/716E1G-ZZaL._SL1500_.jpg" alt="">
+                        <p>this book made me more inspired and confident in combatting cognitive dissonance.</p>
+                        <a href="https://www.howtoarguewithameateater.com/" target="_blank" rel="noopener noreferrer">Website</a>
+                    </li>
+
+                    <li aria-label="Wij Slaven van Suriname">
+                        <img
+                            src="https://www.atlascontact.nl/wp-content/uploads/2026/10/9789045041094_frontcover_original-320x498.jpg"
+                            alt=""
+                        >
+                        <p>it fills my heart with joy that for future generations, this work will be common knowledge.</p>
+                        <a href="https://www.howtoarguewithameateater.com/" target="_blank" rel="noopener noreferrer">Website</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>visual</h2>
+                <p>films, series, graphic design, visual media.</p>
+
+                <ul>
+                    <li aria-label="Jiyi Guanli Ju">
+                        <img src="https://cdn.myanimelist.net/images/anime/1288/147047l.jpg" alt="">
+                        <p>an animated series about memories.</p>
+                    </li>
+
+                    <li aria-label="Look Back">
+                        <img src="https://cdn.myanimelist.net/images/anime/1716/142633l.jpg" alt="">
+                        <p>an animated movie about drawing.</p>
+                    </li>
+
+                    <li aria-label="city of god">
+                        <img src="https://image.tmdb.org/t/p/original/pwKAsZoLysd2PT50h9wsl6W4bDa.jpg" alt="">
+                        <p>a movie about growing up in a favela.</p>
+                    </li>
+
+                    <li aria-label="no more war">
+                        <img
+                            src="https://thumbs.peoplesgdarchive.org/static/media-items/image/45697/upto-1440x1000/6ab940a9/1/006989_006.webp"
+                            alt=""
+                        >
+                        <p>a poster by shigeo fukuda. people are responsible for the environment.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>interactive media</h2>
+                <p>tabletop roleplaying games, digital experiences, video games.</p>
+
+                <ul>
+                    <li aria-label="Deltarune">
+                        <img
+                            src="https://shared.steamstatic.com/store_item_assets/steam/apps/1671210/library_600x900_2x.jpg?t=1749252469"
+                            alt=""
+                        >
+                        <p>a game about hopes and dreams.</p>
+                        <a href="https://deltarune.com/"> learn more </a>
+                    </li>
+
+                    <li aria-label="Expedition 33">
+                        <img
+                            src="https://shared.steamstatic.com/store_item_assets/steam/apps/1903340/8b21381a43ac5a535a838f723815f8fe14ceaf7c/library_600x900_2x.jpg?t=1753344054"
+                            alt=""
+                        >
+                        <p>a game about grief.</p>
+                        <a href="https://www.expedition33.com/"> learn more </a>
+                    </li>
+
+                    <li aria-label="Disco Elysium">
+                        <img
+                            src="https://shared.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg?t=1715250191"
+                            alt=""
+                        >
+                        <p>a game like no other tainted by corporate greed.</p>
+                        <a href="https://discoelysium.com/"> learn more </a>
+                    </li>
+
+                    <li aria-label="Pathfinder 2nd Edition">
+                        <img
+                            src="https://cdn11.bigcommerce.com/s-e0sdfpgiwh/images/stencil/1280x1280/products/3993/525/PZO12001-HC_Pathfinder_Player_Core-Print_1__97478.1755062345.jpg?c=1"
+                            alt=""
+                        >
+                        <p>a rulebook for facilitating make believe with dice, or digital tools.</p>
+                        <a href="https://paizo.com/pathfinder"> learn more </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>music</h2>
+                <p>singles, albums, EPs - music in general, really.</p>
+
+                <ul class="music">
+                    <li aria-label="the mocking stars">
+                        <img src="https://f4.bcbits.com/img/a0342266751_10.jpg" alt="">
+                        <p>the mocking stars- lausse the cat</p>
+                        <a href="https://laussethecat.bandcamp.com/album/the-mocking-stars"> listen here </a>
+                    </li>
+
+                    <li aria-label="needles, california">
+                        <img src="https://f4.bcbits.com/img/a2350700539_10.jpg" alt="">
+                        <p>needles - bryce bishop</p>
+                        <a href="https://brycebishop.bandcamp.com/album/needles-california"> listen here </a>
+                    </li>
+
+                    <li aria-label="the first glass beach album">
+                        <img src="https://f4.bcbits.com/img/a0854720793_10.jpg" alt="">
+                        <p>tfgba - glass beach</p>
+                        <a href="https://glassbeach.bandcamp.com/album/the-first-glass-beach-album"> listen here </a>
+                    </li>
+
+                    <li aria-label="vertigo">
+                        <img src="https://f4.bcbits.com/img/a2386113611_10.jpg" alt="">
+                        <p>eden - vertigo</p>
+                        <a href="https://iameden.bandcamp.com/album/vertigo-explicit"> listen here </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
             <p>
