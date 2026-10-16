@@ -6,31 +6,56 @@
         <title>my reading list</title>
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            li::marker {
+                content: '▶';
+                color: var(--orange);
+            }
+            .read {
+                &::marker {
+                    color: unset;
+                }
+            }
+        </style>
     </head>
     <body>
         <main>
             <h1>rowynn's ever&shy;growing reading list</h1>
-            <p>and they keep on coming and they ekeep on coming and they keep on coming</p>
+            <p>while this is a reading list, those that are not orange are one's i've actually read.</p>
             <p>
-                i use <a href="https://hardcover.app/@gunkbucket">hardcover.app</a> to keep track of what i read, primarily fiction, since i
-                barely read non-fiction in dead tree format.
+                for fiction/non-fiction reads, I use hardcover.app to keep track of what i read, primarily fiction, since i barely read
+                non-fiction in dead tree format.
             </p>
 
             <section>
                 <h2>HTML</h2>
                 <ul>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                    <li class="read">
+                        <a href="https://www.accessibilitychecker.org/blog/semantic-html/" target="_blank" rel="noopener noreferrer">
+                            Semantic HTML Guide 2026: Tags, Examples and Accessibility
+                        </a>
+                        - Casandra Visser, Ritvik Shrivastava, Pedro Velhinho
                     </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
                 </ul>
             </section>
 
             <section>
                 <h2>CSS</h2>
                 <ul>
-                    <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                    <li class="read">
+                        <a href="https://developer.chrome.com/blog/carousels-with-css" target="_blank" rel="noopener noreferrer"
+                            >Carouels with CSS</a
+                        >
+                        - Adam Argyle
                     </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
                 </ul>
             </section>
 
@@ -45,32 +70,36 @@
                         <a href="https://learnjavascript.online" target="_blank" rel="noopener noreferrer"> Learn Javascript </a>
                         - Jad Jabroud
                     </li>
-                    <li>
+                    <li class="read">
                         <a
                             href="https://krijnhoetmer.nl/log/2026/04/making-a-fun-color-scheme-toggle"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            making a fun color scheme toggle - Krijn Hoetmer
+                            making a fun color scheme toggle
                         </a>
+                        - Krijn Hoetmer
                     </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
                 </ul>
             </section>
 
             <section>
                 <h2>UI/UX</h2>
-            </section>
-
-            <section>
-                <h2>Non-Fiction</h2>
-            </section>
-
-            <section>
-                <h2>Fiction</h2>
                 <ul>
-                    <li>
-                        <a href="https://" target="_blank" rel="noopener noreferrer"></a>
+                    <li class="read">
+                        <a href="https://lea.verou.me/blog/2026/dark-mode-toggles/" target="_blank" rel="noopener noreferrer"
+                            >Dark mode toggles: two states are enough</a
+                        >
+                        - Lea Verou
                     </li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
                 </ul>
             </section>
         </main>
