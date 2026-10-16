@@ -3,12 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Pizza...</title>
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            figure {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+                padding: 1em;
+                grid-area: 'img' 'figcaption';
+                background: var(--bg-1);
+                border-radius: 2px;
+            }
+        </style>
     </head>
     <body>
-        <h1>So we're eating pizza...</h1>
-        <p></p>
+        <main>
+            <section>
+                <h1>So we're eating pizza...</h1>
+                <p>
+                    Ordering pizza is probably one of the most common things you'll do with a group. As a <a href="./vegan">vegan</a>, this
+                    is particularly tricky. Not every chain has vegan options, and sometimes it's a <strong>fat fucking <em>lie</em></strong
+                    >.
+                </p>
+                <p>So this is what I do when i need to order pizza...</p>
+            </section>
+
+            <section>
+                <h2>New York Pizza</h2>
+                <p>
+                    <span class="green">My preferred choice:</span> They have two options, but technically more if you customize your
+                    toppings a lil. Plus they're pretty much everywhere.
+                </p>
+                <figure>
+                    <img src="https://cdn.nyp01nlprd.solutions4delivery.com/images/Products/Original/Vegan_Shoarma_-9617.png" alt="">
+                    <figcaption>
+                        <h3>Vegan Shoarma</h3>
+                        <p>
+                            Tomato sauce, red onion, vegan garlic swirl, vegan cheese, vegan chicken shawarma with garlic oil on the edge.
+                        </p>
+                        <p><span class="green">Best With:</span> <strong>Jalapeno's, BBQ sauce.</strong></p>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Frozen Pizza</h2>
+                <p>
+                    <span class="yellow">Decent option</span>, if you can find it...
+
+                    <figure>
+                        <img
+                            src="https://www.oetker.nl/assets/hygraph/AVtdz8Pl3QxerK0kYX32fz/resize=fit:clip,height:662,width:662/compress=metadata:true/quality=value:75/output=format:webp/cmv1l9e664ui007upziptohqc"
+                            alt=""
+                        >
+                        <figcaption>
+                            <h3>Dr. Oetker Ristorante Al Salame Vegano</h3>
+                            <p>It's technically vegan as it may contain traces of milk due to cross contamination.</p>
+                            <p><span class="green">Available:</span> <strong>Jumbo, AH, Plus.</strong></p>
+                            <p><span class="red">Caution:</span> Not recommended if anyone has a milk allergy.</p>
+                        </figcaption>
+                    </figure>
+                </p>
+            </section>
+
+            <section>
+                <h2>Domino's Pizza</h2>
+                <p><span class="red">Last resort.</span> Their pizza is dry and will give you diarrhea. But if you must...</p>
+                <p>Order the Vegan Veggi option, or whatever has extra sauce. I don't trust their meat subsitutes.</p>
+            </section>
+
+            <section>
+                <h2>Literally anything else</h2>
+                <p>The following franchises all have a vegan option, and usually that one is the best one.</p>
+                <ul>
+                    <li><a href="https://www.pazziamsterdam.nl/" target="_blank" rel="noopener noreferrer">Pazzi Amsterdam</a> - Vegana</li>
+                    <li>
+                        <a href="https://www.depizzabakkers.nl/menukaart/" target="_blank" rel="noopener noreferrer">De Pizzabakkers</a> -
+                        Marinara
+                    </li>
+                    <li>
+                        <a href="https://losteria.net/nl/menu/pizza/" target="_blank" rel="noopener noreferrer">L'Osteria</a> - Forza
+                        (vegan)
+                    </li>
+                    <li>
+                        <a href="https://sugo.nl/menu/" target="_blank" rel="noopener noreferrer">Sugo</a>- Redefine Pulled Pork,
+                        Champignon-truffel & Parmezaan, Arrabbiata
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
     </body>
 </html>
