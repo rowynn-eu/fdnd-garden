@@ -4,7 +4,7 @@
 [[002 Good & Bad Practices]]
 
 # Semester 1
-[[000 - The Static Web]]
+[[oldwiki/Semester 1/000 - The Static Web]]
 [[001 - Hypertext Transfer Protocol]]
 [[002 Good & Bad Practices]]
 [[003 - JavaScript]]
