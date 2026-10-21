@@ -9,40 +9,94 @@
         <main>
             <h1>UX van HTML</h1>
 
-            <h2 id="Links">Links</h2>
-            <a href="ux.html">UX van HTML</a>
-
-            <a href="...">Link 1</a>
-            <a href="...">Link 2</a>
-            <a href="...">Link 3</a>
-            <a href="...">Link 4</a>
-            <a href="...">Link 5</a>
-
-            <p>MacOS / Chromium</p>
-            <ul>
-                <li>Als je Command+Click doet, dan opent het de link in een nieuwe tab.</li>
-                <li>Als je Option+Click doet, dan gebeurt er niks.</li>
-                <li>Als je Control+Click dan opent de context menu.</li>
-                <li>Als je Shift+Click dan opent de link in een nieuwe venster.</li>
-            </ul>
-
-            <p>
-                Als je op deze <a href="ux.html" download>in-line link</a> klikt zonder een modifier key, dan wordt deze pagina gedownload.
-            </p>
-
-            <p>
-                Als je op deze <a href="ux.html" download>in-line link</a> klikt dan wordt het geopent in een nieuwe tab, op dezelfde manier
-                als je Command+Click doet.
-            </p>
-
-            <button>Knop</button>
-
             <section>
-                <h2>Afbeeldingen</h2>
+                <h2 id="Links">Links</h2>
+                <a href="ux.html">UX van HTML</a>
+                <a href="#afbeeldingen">Afbeeldingen</a>
+                <a href="#labels">Labels</a>
+                <a href="#headings">Headings</a>
+                <a href="#details">Details</a>
+                <a href="#popups">Popups</a>
+
+                <p>MacOS / Chromium</p>
+                <ul>
+                    <li>Als je Command+Click doet, dan opent het de link in een nieuwe tab.</li>
+                    <li>Als je Option+Click doet, dan gebeurt er niks.</li>
+                    <li>Als je Control+Click dan opent de context menu.</li>
+                    <li>Als je Shift+Click dan opent de link in een nieuwe venster.</li>
+                </ul>
+
+                <p>
+                    Als je op deze <a href="ux.html" download>in-line link</a> klikt zonder een modifier key, dan wordt deze pagina
+                    gedownload.
+                </p>
+
+                <p>
+                    Als je op deze <a href="ux.html" download>in-line link</a> klikt dan wordt het geopent in een nieuwe tab, op dezelfde
+                    manier als je Command+Click doet.
+                </p>
+
+                <button>Knop</button>
+
+                <p>Als je op deze knop klikt, dan gebeurt er niks.</p>
             </section>
 
             <section>
-                <h2>Labels</h2>
+                <h2 id="afbeeldingen">Afbeeldingen</h2>
+                <a href="ux.html"><img width="300" height="200" alt="Download Afbeelding"></a>
+
+                <p>Afbeeldingen kan je op verschillende manieren gebruiken.</p>
+
+                <ul>
+                    <li>
+                        Een handige tip om te bepalen hoe je een goede ALT attribute schrijf is als je de inhoud van een pagina zou
+                        voorlezen aan iemand anders. Wat is belangrijk, wat is niet belangrijk?
+                    </li>
+                    <li>
+                        Je kan afbeeldingen als decoratief gebruiken. Dan is het verstanding om <code>alt=""</code> te gebruiken, tenzij het
+                        een functie heeft als het tonen van een logo. Dan kan je beter de naam van de logo kiezen.
+                    </li>
+                    <ul>
+                        <li>
+                            Als deze foto tekst bevat, dan kan je het toevoegen in het alt attribute als het nergens anders te vinden is.
+                        </li>
+                    </ul>
+                    <li>
+                        Afbeeldingen kunnen ook informatief gebruikt worden, aanvullend op een tekst of alleen infromatie behouden. Als het
+                        een foto van mezelf is, dan schrijf je <code>alt="Rowynn"</code> en anders <code>alt="Foto van Rowynn"</code> als er
+                        ook tekst bij staat wie Rowynn is. Anders, kan je een omschrijving toevoegen dat gepast is als je het zou voorlezen
+                        aan iemand anders aan de telefoon.
+                    </li>
+                    <li>Je kan afbeeldingen ook functioneel gebruiken.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="labels">Labels</h2>
+                <fieldset>
+                    <legend>Docenten</legend>
+                    <ul>
+                        <li><input type="checkbox"> Dorien Drees</li>
+                        <li><input type="checkbox"> Joost Faber</li>
+                        <li><input type="checkbox"> Justus Sturkenboom</li>
+                        <li><input type="checkbox"> Krijn Hoetmer</li>
+                        <li><input type="checkbox"> Koop Reynders</li>
+                        <li><input type="checkbox"> Sanne 't Hooft</li>
+                        <li><input type="checkbox"> Suus ten Voorde</li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2 id="headings">Headings</h2>
+            </section>
+
+            <section>
+                <h2 id="details">Details</h2>
+            </section>
+
+            <section>
+                <h2 id="popups">Popups</h2>
             </section>
         </main>
     </body>
