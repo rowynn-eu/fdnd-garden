@@ -6,17 +6,22 @@
         <title>UX Experience</title>
     </head>
     <body>
-        <main>
+        <header>
             <h1>UX van HTML</h1>
 
-            <section>
-                <h2 id="Links">Links</h2>
+            <nav>
                 <a href="ux.html">UX van HTML</a>
                 <a href="#afbeeldingen">Afbeeldingen</a>
                 <a href="#labels">Labels</a>
                 <a href="#headings">Headings</a>
                 <a href="#details">Details</a>
                 <a href="#popups">Popups</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2 id="Links">Links</h2>
 
                 <p>MacOS / Chromium</p>
                 <ul>
@@ -75,15 +80,71 @@
                 <h2 id="labels">Labels</h2>
                 <fieldset>
                     <legend>Docenten</legend>
+
                     <ul>
-                        <li><input type="checkbox"> Dorien Drees</li>
-                        <li><input type="checkbox"> Joost Faber</li>
-                        <li><input type="checkbox"> Justus Sturkenboom</li>
-                        <li><input type="checkbox"> Krijn Hoetmer</li>
-                        <li><input type="checkbox"> Koop Reynders</li>
-                        <li><input type="checkbox"> Sanne 't Hooft</li>
-                        <li><input type="checkbox"> Suus ten Voorde</li>
+                        <li>
+                            <label><input type="checkbox"> Cyd</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Dorien</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Gwen</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Jad</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Joost</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Justus</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Koop</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Krijn</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Sanne</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> Suus</label>
+                        </li>
                     </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adresgegevens</legend>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adresgegevens</legend>
+                    <p>Straat: <input type="text"></p>
+                    <p>Huisnummer: <input type="text"></p>
+                    <p>Postcode: <input type="text"></p>
+                    <p>Plaats: <input type="text"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adresgegevens</legend>
+                    <p>
+                        <label>Straat: <input type="text">/></label>
+                    </p>
+                    <p>
+                        <label>Huisnummer: <input type="text">/></label>
+                    </p>
+                    <p>
+                        <label>Postcode: <input type="text">/></label>
+                    </p>
+                    <p>
+                        <label>Plaats: <input type="text">/></label>
+                    </p>
                 </fieldset>
             </section>
 
