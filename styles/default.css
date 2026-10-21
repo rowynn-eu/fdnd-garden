@@ -19,9 +19,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     --red: light-dark(#c30f00, #fd5140);
     --green: light-dark(#656400, #b8bb26);
     --yellow: light-dark(#825900, #fabd2f);
-    --blue: light-dark(#004141, #7eaaa6);
+    --blue: light-dark(#003141, #7eaaa6);
     --purple: light-dark(#a23b5f, #d3869b);
-    --aqua: light-dark(#007100, #8ec07c);
+    --aqua: light-dark(#00100, #8ec07c);
     --orange: light-dark(#a34400, #fe8019);
     --gray: light-dark(#504945, #a89984);
     --plum: light-dark(#bc1050, #c44265);
@@ -94,6 +94,36 @@ body {
         font-weight: 400;
     }
 
+    blockquote {
+        margin-left: 1em;
+        margin-right: 1em;
+        border-left: 0.25em solid var(--plum);
+        background-color: var(--bg-1);
+        padding: 0.5em 1em;
+    }
+
+    figure {
+        border: 1px solid var(--bg-2);
+        /* background-color: var(--bg-1); */
+
+        figcaption {
+            border-top: 1px solid var(--bg-2);
+            padding-left: 1em;
+            background-color: var(--bg-2);
+        }
+    }
+
+    aside {
+        border-left: 0.25em solid var(--blue);
+        margin-left: 1em;
+        padding: 1em;
+        background-color: var(--bg-2);
+
+        &::before {
+            content: '>\00a0';
+        }
+    }
+
     a {
         color: var(--blue);
         text-decoration: double var(--blue);
@@ -105,7 +135,7 @@ body {
         }
         &::after {
             display: inline-block;
-            content: '◥' / '';
+            content: '\00a0◥' / '';
             margin-left: -0.25em;
             font-size: 0.5em;
             font-weight: 700;

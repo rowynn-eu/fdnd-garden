@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>aria - rowynn.eu</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <main>
+            <h1>using Aria</h1>
+            <p>i was sincerely confused about the usage of aria and what's it's intended use is supposed to be.</p>
+            <p>
+                this happened as i had asked a question to
+                <a href="https://krijnhoetmer.nl" target="_blank" rel="noopener noreferrer">Krijn</a>
+                , expecting an answer about how to properly use a section and using it with the
+                <code>aria-labelledby="section-title"</code>
+                attribute, thinking it was the right thing to do as I was led to believe by a video from Kevin Powell and other sources
+                online using aria-label for functions.
+            </p>
+
+            <p>
+                colour me surprised when Krijn reacted confused, and negatively, as if i was talking about nonsense, which was perceded with
+                a thoughtful, and civil discussion about ARIA and its use-cases.
+            </p>
+
+            <section>
+                <h2>why I learned it's bad practice</h2>
+                <p>krijn swiftly directed me towards the first rule of ARIA, as proposed by the W3C (discontinued) draft:</p>
+
+                <blockquote cite="https://www.w3.org/TR/using-aria/#rule1">
+                    <p>
+                        if you can use a native HTML element or attribute with the semantics and behavior you require already built in,
+                        instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
+                    </p>
+                    <p>under what circumstances may this not be possible?</p>
+
+                    <ul>
+                        <li>
+                            if the feature is available in HTML but it is not implemented or it is implemented, but
+                            <a href="https://www.html5accessibility.com" target="_blank" rel="noopener noreferrer">accessibility support</a>
+                            is not.
+                        </li>
+
+                        <li>
+                            if the visual design constraints rule out the use of a particular native element, because the element cannot be
+                            styled as required.
+                        </li>
+
+                        <li>
+                            if the feature is
+                            <a href="https://vispero.com/resources/#html5na" target="_blank" rel="noopener noreferrer">
+                                not currently available in HTML
+                            </a>
+                            .
+                        </li>
+                    </ul>
+                </blockquote>
+
+                <p>
+                    from
+                    <cite>
+                        <a href="https://www.w3.org/TR/using-aria/#bib-html" target="_blank" rel="noopener noreferrer">
+                            2.1 First Rule of ARIA Use - W3C Discontinued Draft
+                        </a>
+                    </cite>
+                </p>
+
+                <p>
+                    he went on to explain that you'll only be using ARIA in projects that are severely complex, advanced or high in scope,
+                    and you're working to make a website function for the remaining 20%.
+                </p>
+
+                <p>
+                    ... which of course this website isn't. Anything written by hand won't be high-scope enough that it'll warrant the use
+                    of ARIA-label's.
+                </p>
+
+                <p>
+                    i guess what's worse that it won't ever be covered in the curriculum of this programme because - (assuming here) -, most
+                    of the lecturers/teachers are Anti-AI aswell as Anti-ARIA.
+                </p>
+
+                <p>
+                    but it makes sense, if you were to take a look at the
+                    <a href="https://webaim.org/projects/million/#aria" target="_blank" rel="noopener noreferrer">
+                        WebAIM 2026 accessibility report
+                    </a>
+                    ,
+                    <q>
+                        home pages with ARIA present had significantly more errors (59.1 on average) than pages without ARIA (42 on
+                        average).
+                    </q>
+                </p>
+
+                <p>genuinely, coulour me damned.</p>
+            </section>
+
+            <section>
+                <h2>why it sucks to hear though...</h2>
+
+                <p>i've always wondered what aria labels were about, and why they were used in certain websites and missing in others.</p>
+
+                <p>
+                    it's not that my interest in ARIA and accessibility come across as virtue signaling, or me pretending to care about
+                    visually-impaired users or those reliant on screen readers.
+                    <strong>It's out of a genuine interest.</strong>
+                </p>
+
+                <p>
+                    so to be shut down like that, and learning that using ARIA (while the intentions are good) is looked down upon, it
+                    sucks.
+                </p>
+
+                <p>what's the solution then if you want to make the web more accessible?</p>
+
+                <aside>
+                    side note: i think what motivated me to write about this in the first place is that i just feel like an idiot for asking
+                    and wish i just didn't bother.
+                </aside>
+                <p>it's somethinng I'll have to read more about...</p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
+    </body>
+</html>

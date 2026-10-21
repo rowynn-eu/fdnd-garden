@@ -4,5 +4,8 @@
     "printWidth": 140,
     "semi": false,
     "singleQuote": true,
+    "bracketSameLine": true,
+    "html.format.wrapAttributes": "force-aligned",
+    "htmlWhitespaceSensitivity": "ignore",
     "plugins": ["@awmottaz/prettier-plugin-void-html"]
 }
