@@ -88,7 +88,7 @@ body {
     a {
         &::after {
             display: inline-block;
-            content: '◥';
+            content: '◥' / '';
             margin-left: -0.25em;
             font-size: 0.5em;
             font-weight: 700;
