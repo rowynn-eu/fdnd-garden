@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UX Experience</title>
+        <link rel="stylesheet" href="../styles/default.css">
+
+        <style>
+            nav {
+                display: grid;
+            }
+
+            dialog::backdrop {
+                background: #0009;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -13,7 +24,6 @@
                 <a href="ux.html">UX van HTML</a>
                 <a href="#afbeeldingen">Afbeeldingen</a>
                 <a href="#labels">Labels</a>
-                <a href="#headings">Headings</a>
                 <a href="#details">Details</a>
                 <a href="#popups">Popups</a>
             </nav>
@@ -58,14 +68,10 @@
                         voorlezen aan iemand anders. Wat is belangrijk, wat is niet belangrijk?
                     </li>
                     <li>
-                        Je kan afbeeldingen als decoratief gebruiken. Dan is het verstanding om <code>alt=""</code> te gebruiken, tenzij het
-                        een functie heeft als het tonen van een logo. Dan kan je beter de naam van de logo kiezen.
+                        Je kan afbeeldingen als decoratief gebruiken. Dan is het verstanding om <code>alt=""</code> te gebruiken, en de
+                        juiste tekst is lastig, want dat hangt sterk af van de context.
                     </li>
-                    <ul>
-                        <li>
-                            Als deze foto tekst bevat, dan kan je het toevoegen in het alt attribute als het nergens anders te vinden is.
-                        </li>
-                    </ul>
+
                     <li>
                         Afbeeldingen kunnen ook informatief gebruikt worden, aanvullend op een tekst of alleen infromatie behouden. Als het
                         een foto van mezelf is, dan schrijf je <code>alt="Rowynn"</code> en anders <code>alt="Foto van Rowynn"</code> als er
@@ -117,22 +123,6 @@
 
                 <fieldset>
                     <legend>Adresgegevens</legend>
-                    <p><input type="text"></p>
-                    <p><input type="text"></p>
-                    <p><input type="text"></p>
-                    <p><input type="text"></p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Adresgegevens</legend>
-                    <p>Straat: <input type="text"></p>
-                    <p>Huisnummer: <input type="text"></p>
-                    <p>Postcode: <input type="text"></p>
-                    <p>Plaats: <input type="text"></p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Adresgegevens</legend>
                     <p>
                         <label>Straat: <input type="text">/></label>
                     </p>
@@ -149,15 +139,43 @@
             </section>
 
             <section>
-                <h2 id="headings">Headings</h2>
-            </section>
-
-            <section>
                 <h2 id="details">Details</h2>
+
+                <details name="faq">
+                    <summary>Moet ik al kunnen coderen?</summary>
+                    <p>
+                        Nee, je hebt helemaal geen voorkennis nodig om te beginnen aan deze opleiding, we kunnen je alles leren! Als je wel
+                        al voorkennis hebt, is dat alleen maar goed, dan kunnen we je helpen je skills te verbeteren en te verdiepen in de
+                        stof.
+                    </p>
+                </details>
+                <details name="faq">
+                    <summary>Wat is frontend development?</summary>
+                    <p>
+                        Een frontend developer ontwerpt en bouwt websites in HTML, CSS en JavaScript. Deze frontend talen leer je bij ons,
+                        je hebt dus geen voorkennis nodig.
+                    </p>
+                </details>
+                <details name="faq">
+                    <summary>Hoe werkt deze frontend developer opleiding?</summary>
+                    <p>
+                        Je richt je tijdens deze tweejarige studie op webdesign, visual interface design en frontend development. Vanaf het
+                        begin van de opleiding werk je aan actuele opdrachten van échte opdrachtgevers, en leer je samenwerken in
+                        multidisciplinaire teams.
+                    </p>
+                </details>
             </section>
 
             <section>
                 <h2 id="popups">Popups</h2>
+
+                <button popovertarget="popup">Open iets</button>
+
+                <dialog popover id="popup">
+                    <p>Dit staat in een popup/overlay/popover.</p>
+                    <p>Leuk he.</p>
+                    <button popovertarget="popup" popovertargetaction="hide">Sluit dit ding weer</button>
+                </dialog>
             </section>
         </main>
     </body>
