@@ -16,14 +16,24 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
 :root {
     color-scheme: light dark;
 
-    --red: light-dark(#cc241d, #fb4934);
-    --green: light-dark(#98971a, #b8bb26);
-    --yellow: light-dark(#d79921, #fabd2f);
-    --blue: light-dark(#004141, #83a598);
-    --purple: light-dark(#b16286, #d3869b);
-    --aqua: light-dark(#689d6a, #8ec07c);
-    --orange: light-dark(#cf5800, #fe8019);
-    --gray: light-dark(#7c6f64, #a89984);
+    --red: light-dark(#c30f00, #fd5140);
+    --green: light-dark(#656400, #b8bb26);
+    --yellow: light-dark(#825900, #fabd2f);
+    --blue: light-dark(#004141, #7eaaa6);
+    --purple: light-dark(#a23b5f, #d3869b);
+    --aqua: light-dark(#007100, #8ec07c);
+    --orange: light-dark(#a34400, #fe8019);
+    --gray: light-dark(#504945, #a89984);
+    --plum: light-dark(#bc1050, #c44265);
+
+    /* --red: light-dark(#c30f00, #fd5140);
+    --orange: light-dark(oklch(from #c30f00 l c calc(h + 30)), oklch(from #fd5140 l c calc(h + 30)));
+    --yellow: light-dark(oklch(from #c30f00 l c calc(h + 50)), oklch(from #fd5140 l c calc(h + 50)));
+    --green: light-dark(oklch(from #c30f00 l c calc(h + 90)), oklch(from #fd5140 l c calc(h + 90)));
+    --aqua: light-dark(oklch(from #c30f00 l c calc(h + 140)), oklch(from #fd5140 l c calc(h + 140)));
+    --blue: light-dark(oklch(from #c30f00 l c calc(h + 170)), oklch(from #fd5140 l c calc(h + 170)));
+    --purple: light-dark(oklch(from #c30f00 l c calc(h + 250)), oklch(from #fd5140 l c calc(h + 280)));
+    --pink: light-dark(oklch(from #c30f00 l c calc(h - 30)), oklch(from #fd5140 l c calc(h - 30))); */
 
     --bg-0: light-dark(#ebdbb2, #282828);
     --bg-1: light-dark(#d5c4a1, #3c3836);
@@ -115,6 +125,10 @@ body {
     code {
         background-color: oklch(from var(--orange) l c h / 0.5);
         border-radius: 2px;
+    }
+
+    @media (min-width: 750px) {
+        max-width: 750px;
     }
 }
 
