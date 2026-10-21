@@ -50,6 +50,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     transition: color 0.125s ease-in-out;
     transition: background 0.125s ease-in-out;
 }
+
+a,
+input,
+label,
+select,
+button {
+    cursor: pointer;
+}
+
 body {
     /* layout */
     margin: 2em auto;
@@ -86,6 +95,14 @@ body {
     }
 
     a {
+        color: var(--blue);
+        text-decoration: double var(--blue);
+        &:hover {
+            color: var(--aqua);
+            /* transition: color 0s ease-in-out; */
+            position: relative;
+            top: -1px;
+        }
         &::after {
             display: inline-block;
             content: '◥' / '';
@@ -107,16 +124,7 @@ body {
     h1 {
         color: var(--orange);
     }
-    a {
-        color: var(--blue);
-        text-decoration: double var(--blue);
-        &:hover {
-            color: var(--aqua);
-            /* transition: color 0s ease-in-out; */
-            position: relative;
-            top: -1px;
-        }
-    }
+
     hr {
         border: 1px solid var(--orange);
         width: 100%;
