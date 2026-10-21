@@ -116,11 +116,6 @@ body {
         background-color: oklch(from var(--orange) l c h / 0.5);
         border-radius: 2px;
     }
-
-    /* responsive layouts */
-    @media (min-width: 710px) {
-        width: 710px;
-    }
 }
 
 article {
@@ -148,7 +143,6 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 2em;
     p {
         font-size: 0.5rem;
         flex-basis: 100%;
