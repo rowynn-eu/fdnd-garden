@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cheatsheet - rowynn.eu</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            button {
+                display: grid;
+                place-items: center;
+                padding: 0;
+                width: fit-content;
+                height: fit-content;
+                color: var(--bg-1);
+                background-color: var(--bg-1);
+                cursor: zoom-in;
+            }
+
+            div:nth-of-type(1) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+            }
+
+            [popover] {
+                border: 0;
+                padding: 0;
+
+                inset: 0.125em;
+                width: 70svw;
+                height: 95svh;
+
+                img {
+                    z-index: 1;
+                    cursor: zoom-out;
+                    object-fit: contain;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            a::after {
+                display: none !important;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <hgroup>
+                <h1>polypane shortcuts</h1>
+                <p>
+                    i need these because i'm a chud. the cheatsheets are
+                    <a href="https://polypane.app/cheatsheets/" target="_blank" rel="noopener noreferrer">available here!</a>
+                </p>
+            </hgroup>
+
+            <!-- ******** -->
+            <!-- FIGURES! -->
+            <!-- ******** -->
+
+            <div>
+                <figure>
+                    <button popovertarget="div-grid" popovertargetaction="toggle">
+                        <img src="./assets/cheatsheets/grid.png" alt="">
+                    </button>
+                    <figcaption>Grid</figcaption>
+                </figure>
+
+                <figure>
+                    <button popovertarget="div-flex">
+                        <img src="./assets/cheatsheets/flexbox.png" alt="">
+                    </button>
+                    <figcaption>Flexbox</figcaption>
+                </figure>
+
+                <figure>
+                    <button popovertarget="div-anchor">
+                        <img src="./assets/cheatsheets/anchor.png" alt="">
+                    </button>
+                    <figcaption>Anchor</figcaption>
+                </figure>
+
+                <figure>
+                    <button popovertarget="div-invoker">
+                        <img src="./assets/cheatsheets/invoker.png" alt="">
+                    </button>
+                    <figcaption>Invoker</figcaption>
+                </figure>
+            </div>
+
+            <!-- ******** -->
+            <!-- POPOVERS -->
+            <!-- ******** -->
+
+            <div id="div-grid" popover="auto">
+                <button type="button" popovertarget="div-grid" popovertargetaction="hide">
+                    <img src="./assets/cheatsheets/grid.png" alt="">
+                </button>
+            </div>
+
+            <div id="div-flex" popover="auto">
+                <button type="button" popovertarget="div-flex" popovertargetaction="hide">
+                    <img src="./assets/cheatsheets/flexbox.png" alt="">
+                </button>
+            </div>
+
+            <div id="div-anchor" popover="auto">
+                <button type="button" popovertarget="div-anchor" popovertargetaction="hide">
+                    <img src="./assets/cheatsheets/anchor.png" alt="">
+                </button>
+            </div>
+
+            <div id="div-invoker" popover="auto">
+                <button type="button" popovertarget="div-invoker" popovertargetaction="hide">
+                    <img src="./assets/cheatsheets/invoker.png" alt="">
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
+    </body>
+</html>
