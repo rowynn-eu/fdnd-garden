@@ -32,9 +32,7 @@ background-position:
     center center,
     left top;
 background-size: 50% 50%;
-background-image:
-    linear-gradient(in oklch 45deg, var(--blauw), var(--geel)),
-    linear-gradient(in oklch 45deg, var(--rood), var(--oranje));
+background-image: linear-gradient(in oklch 45deg, var(--blauw), var(--geel)), linear-gradient(in oklch 45deg, var(--rood), var(--oranje));
 ```
 
 I also learned about some cool shortcuts I want to make!
@@ -205,3 +203,9 @@ becomes
     <li>Text...</li>
 </ul>
 ```
+
+### Tuesday
+
+### Wednesday (Sprint Review)
+
+### Friday
