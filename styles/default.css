@@ -20,11 +20,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     --green: light-dark(#656400, #b8bb26);
     --yellow: light-dark(#825900, #fabd2f);
     --blue: light-dark(#003141, #7eaaa6);
-    --purple: light-dark(#a23b5f, #d3869b);
-    --aqua: light-dark(#00100, #8ec07c);
+    --purple: light-dark(#bc1050, #d47790);
+    --aqua: light-dark(#426644, #8ec07c);
     --orange: light-dark(#a34400, #fe8019);
     --gray: light-dark(#504945, #a89984);
-    --plum: light-dark(#bc1050, #c44265);
 
     /* --red: light-dark(#c30f00, #fd5140);
     --orange: light-dark(oklch(from #c30f00 l c calc(h + 30)), oklch(from #fd5140 l c calc(h + 30)));
@@ -60,6 +59,9 @@ button {
 }
 
 body {
+    display: grid;
+    grid-template-columns: 1fr;
+
     /* layout */
     margin: 2em auto;
     padding: 0 10px;
@@ -96,11 +98,11 @@ body {
     }
 
     blockquote {
-        margin-left: 1em;
+        margin-left: 0em;
         margin-right: 1em;
-        border-left: 0.25em solid var(--plum);
+        border-left: 0.25em solid var(--orange);
         background-color: var(--bg-1);
-        padding: 0.5em 1em;
+        padding: 0.25em 1em;
     }
 
     figure {
@@ -171,31 +173,19 @@ body {
     }
 }
 
-article {
-    display: grid;
-    margin: 0 1em;
-}
-
 header {
-    /* display: flex; */
-    button {
-        text-decoration: none;
-        border: 1px solid var(--orange);
-        color: var(--orange);
-        background: none;
-        height: 2dvh;
-        width: 2em;
-        &:hover {
-            background: var(--fg-0);
-        }
+    a::after {
+        content: '' / '';
+    }
+    img {
+        height: clamp(4rem, 2.5116rem + 7.4419vw, 6rem);
+        width: auto;
     }
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     p {
         font-size: 0.5rem;
         flex-basis: 100%;

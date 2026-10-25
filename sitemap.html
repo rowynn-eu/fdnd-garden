@@ -10,20 +10,10 @@
             main {
                 display: grid;
                 grid-template-columns: 1fr;
-                justify-items: center;
 
                 p {
                     padding-left: 1em;
                     border-left: 2px var(--orange) solid;
-                }
-
-                img {
-                    display: block;
-                    height: 100px;
-                    width: 100px;
-                }
-                h1 {
-                    text-align: center;
                 }
             }
             div {
@@ -56,16 +46,36 @@
                     }
                 }
             }
+            footer {
+                margin-top: 1em;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+                > img {
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                }
+            }
         </style>
     </head>
     <body>
+        <header>
+            <a href="./">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
+                    <img src="./assets/logo-light.svg" alt="rowynn">
+                </picture>
+            </a>
+        </header>
+
         <main>
             <h1>网站地图</h1>
-            <p>
+            <blockquote>
                 A sitemap is a structured list of pages on a website that helps people and software discover content. Sitemaps can be
                 human-readable HTML pages designed for visitors, machine-readable XML files intended for search engines, or both.
                 <a href="https://indieweb.org/sitemap" target="_blank">- IndieWeb</a>
-            </p>
+            </blockquote>
 
             <div>
                 <ul>
@@ -147,9 +157,10 @@
                     <li><a href="./yep" target="_blank">/yep</a></li>
                 </ul>
             </div>
-            <img src="./assets/rocho.gif" alt="Animation of a masked goat creature standing around." aria-hidden="true">
         </main>
         <footer>
+            <img src="./assets/rocho.gif" alt="Animation of a masked goat creature standing around." aria-hidden="true">
+
             <nav>
                 <a href="./">./home</a>
             </nav>
