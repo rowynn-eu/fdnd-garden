@@ -6,6 +6,18 @@
         <title>profile pictures - rowynn.eu</title>
         <link rel="stylesheet" href="./styles/default.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            li {
+                margin-top: 2em;
+                > a {
+                    margin-bottom: 2em;
+                }
+                > img {
+                    aspect-ratio: 1 / 1;
+                    margin-bottom: 2em;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -17,7 +29,27 @@
             </a>
         </header>
 
-        <main></main>
+        <main>
+            <hgroup>
+                <h1>profile pictures</h1>
+                <p>here's all the profile pictures i've used!</p>
+            </hgroup>
+
+            <ul class="carousel">
+                <li>
+                    <img src="./assets/avatars/000.png" alt="Artwork by "><a
+                        href="https://vgen.co/seapixxel"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >by seapixxel on vgen!</a
+                    >
+                </li>
+                <li>
+                    <img src="./assets/avatars/001.png" alt="">
+                    <a href="https://vgen.co/c4fezinhoo" target="_blank" rel="noopener noreferrer">by c4fezinhoo on vgen!</a>
+                </li>
+            </ul>
+        </main>
 
         <footer>
             <p>
