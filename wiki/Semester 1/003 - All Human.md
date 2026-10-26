@@ -33,3 +33,20 @@ Three self-study questions:
 What I learned this week...
 
 Remember to check out the sources of the workshops this week and to make a note about what each of them are about and what they have.
+
+### Monday (26 oct)
+
+On monday I was given these four questions:
+
+- What does WCAG mean
+- What's an example of acolour combination with good contrast?
+- What color combination works less well?
+- What WCAG level do you want to strive for? A, AA or AAA and why?
+
+1. WCAG off the top of my head is Web Content Accessibility Guidelines, and i frequently confuse the ordeer of which the letters appear, whether it is WCAG or WACG.
+
+2. A good colour contrast combination is #0b162d with #f6844c, which has a contrast of 7.13:1, in otherw ords AAA.
+
+3. Green and red. They're annoying to distinguish, even for those who don't have color blindness.
+
+4. I'd like to strive for AAA for whenever possible, but it may not always be the case depending on what the client wants because it does restrict your colour pallette and require a more thoughtful consideration of the colours.
