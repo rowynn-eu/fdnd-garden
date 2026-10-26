@@ -16,6 +16,79 @@
 
         <style>
             /* meow */
+
+            section > ul {
+                display: grid;
+                grid-auto-flow: row;
+                grid-template-columns: repeat(auto-fit, 150px);
+
+                align-items: center;
+
+                gap: 1em;
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            section a {
+                display: block;
+                text-align: center;
+                padding: 1em;
+                color: var(--fg-0);
+                background-color: var(--bg-1);
+
+                &:hover {
+                    color: var(--bg-0);
+                    background-color: var(--fg-1);
+                }
+
+                &::after {
+                    content: '';
+                }
+            }
+
+            main {
+                img:nth-of-type(1) {
+                    width: 2em;
+                    height: 2em;
+                }
+
+                section:nth-of-type(1) {
+                    ul > li:nth-of-type(1) > a {
+                        border-bottom: 0.25em solid var(--purple);
+                    }
+                    ul > li:nth-of-type(2) > a {
+                        border-bottom: 0.25em solid var(--green);
+                    }
+                    ul > li:nth-of-type(3) > a {
+                        border-bottom: 0.25em solid var(--red);
+                    }
+                    ul > li:nth-of-type(4) > a {
+                        border-bottom: 0.25em solid var(--aqua);
+                    }
+                }
+
+                section:nth-of-type(2) {
+                    ul > li:nth-of-type(1) > a {
+                        border-bottom: 0.25em solid var(--aqua);
+                    }
+                }
+            }
+
+            .css {
+                border-bottom: 0.25em solid var(--blue);
+            }
+
+            .html {
+                border-bottom: 0.25em solid var(--orange);
+            }
+
+            .js {
+                border-bottom: 0.25em solid var(--yellow);
+            }
+
+            .note {
+                border-bottom: 0.25em solid var(--gray);
+            }
         </style>
     </head>
     <body>
@@ -29,13 +102,32 @@
         </header>
 
         <main>
-            <hgroup>
-                <h1>dashboard</h1>
-            </hgroup>
             <section>
-                <h2>why?</h2>
-                <p>because it'll feature the basis for everything</p>
+                <h2>garden</h2>
+                <ul>
+                    <li><a href="./i-love-web.html">we &hearts; web</a></li>
+                    <li><a href="./wiki/">learning log</a></li>
+                    <li><a href="./cheatsheet.html">cheatsheet</a></li>
+                    <li><a href="./cheatsheet.html">links</a></li>
+                </ul>
             </section>
+            <section>
+                <h2>bookmarks</h2>
+                <ul>
+                    <li><a href="https://programma.fdnd.nl/" target="_blank" rel="noopener noreferrer">schedule</a></li>
+                    <li class="note">
+                        <a href="https://www.a11yproject.com/checklist/#color-contrast" target="_blank" rel="noopener noreferrer"
+                            >checklist</a
+                        >
+                    </li>
+                    <li class="css">
+                        <a href="https://utopia.fyi/clamp/calculator/" target="_blank" rel="noopener noreferrer">clamp()</a>
+                    </li>
+                    <li class="css"><a href="https://randoma11y.com" target="_blank" rel="noopener noreferrer">a11y clr</a></li>
+                </ul>
+            </section>
+
+            <img src="./assets/rocho.gif" alt="">
         </main>
 
         <footer>

@@ -48,6 +48,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     box-sizing: border-box;
     transition: color 0.125s ease-in-out;
     transition: background 0.125s ease-in-out;
+    transition: background-color 0.125s ease-in-out;
 }
 @layer base {
     a,
