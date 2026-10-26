@@ -26,28 +26,61 @@
             --pride-2: #fff0d3;
             --pride-3: #915e99;
             --pride-4: #480a2f;
-            background: linear-gradient(90deg, var(--pride-1) 0 25%, var(--pride-2) 0 50%, var(--pride-3) 0 75%, var(--pride-4) 0 100%);
-            background-size: 200% 100%;
-            background-clip: text;
-            color: transparent;
-            animation-name: --sweep;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: reverse;
             display: inline-block;
+
+            @media (prefers-reduced-motion: reduce) {
+                &::before {
+                    content: '' / '';
+                    display: inline-block;
+                    width: 1em;
+                    height: 0.75em;
+                    background: linear-gradient(
+                        180deg,
+                        var(--pride-1) 0% 25%,
+                        var(--pride-2) 0% 50%,
+                        var(--pride-3) 0% 75%,
+                        var(--pride-4) 0% 100%
+                    );
+                }
+            }
+            @media (prefers-reduced-motion: no-preference) {
+                background: linear-gradient(
+                    90deg,
+                    var(--pride-1) 0% 25%,
+                    var(--pride-2) 0% 50%,
+                    var(--pride-3) 0% 75%,
+                    var(--pride-4) 0% 100%
+                );
+                background-size: 200% 100%;
+                background-clip: text;
+                color: transparent;
+                animation-name: --sweep;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+            }
         }
 
         figure {
             display: grid;
             gap: 1rem;
             margin: 0rem;
+            border: none;
             img {
                 border-radius: 5%;
             }
 
             @media (min-width: 500px) {
                 grid-template-areas: 'img div';
+            }
+        }
+
+        div {
+            div[aria-hidden='true'] {
+                display: inline;
+                /* padding: 1em 0em; */
+                font-size: 3em;
             }
         }
     </style>
@@ -63,7 +96,7 @@
 
         <main>
             <h1>Rowynn's Digital Garden</h1>
-            <section class="card">
+            <div class="card">
                 <figure>
                     <img
                         src="https://cdn.imgchest.com/files/d2c0de4bf344.png"
@@ -81,16 +114,15 @@
                         <span>
                             <strong>
                                 my pronouns are
-                                <a class="pronouns" href="https://en.wikipedia.org/wiki/Singular_they" target="_blank"> they/them </a>
+                                <a class="pronouns" href="https://en.wikipedia.org/wiki/Singular_they" target="_blank">they/them</a>
                                 <span aria-hidden="true">(„• ᴗ •„)</span>
                             </strong>
                         </span>
 
-                        <p aria-hidden="true">🌱🏳️‍🌈🏳️‍⚧️🇸🇷🇳🇱</p>
+                        <div aria-hidden="true">🇸🇷🇳🇱</div>
                     </div>
                 </figure>
-                <hr aria-hidden="true">
-            </section>
+            </div>
             <!-- <section>
                 <h2>Welcome to my digital garden!</h2>
                 <p>

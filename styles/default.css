@@ -49,216 +49,216 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     transition: color 0.125s ease-in-out;
     transition: background 0.125s ease-in-out;
 }
-
-a,
-input,
-label,
-select,
-button {
-    cursor: pointer;
-}
-
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    /* layout */
-    margin: 2em auto;
-    padding: 0 10px;
-
-    img {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    /* fonts */
-
-    font-family: 'Iosevka Etoile Web', serif;
-    font-weight: 400;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
+@layer base {
+    a,
+    input,
+    label,
+    select,
     button {
-        font-family: 'Iosevka Aile Web', system-ui, sans-serif;
-        font-weight: 600;
+        cursor: pointer;
     }
 
-    code,
-    pre,
-    kbd,
-    samp {
-        font-family: 'Iosevka Web', monospace;
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        /* layout */
+        margin: 2em auto;
+        padding: 0 10px;
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* fonts */
+
+        font-family: 'Iosevka Etoile Web', serif;
         font-weight: 400;
-    }
 
-    blockquote {
-        margin-left: 0em;
-        margin-right: 1em;
-        border-left: 0.25em solid var(--orange);
-        background-color: var(--bg-1);
-        padding: 0.25em 1em;
-    }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        button {
+            font-family: 'Iosevka Aile Web', system-ui, sans-serif;
+            font-weight: 600;
+        }
 
-    figure {
-        border: 1px solid var(--bg-2);
-        /* background-color: var(--bg-1); */
+        code,
+        pre,
+        kbd,
+        samp {
+            font-family: 'Iosevka Web', monospace;
+            font-weight: 400;
+        }
 
-        figcaption {
-            border-top: 1px solid var(--bg-2);
-            padding-left: 1em;
+        blockquote {
+            margin-left: 0em;
+            margin-right: 1em;
+            border-left: 0.25em solid var(--orange);
+            background-color: var(--bg-1);
+            padding: 0.25em 1em;
+        }
+
+        figure {
+            border: 1px solid var(--bg-2);
+            /* background-color: var(--bg-1); */
+
+            figcaption {
+                border-top: 1px solid var(--bg-2);
+                padding-left: 1em;
+                background-color: var(--bg-2);
+            }
+        }
+
+        aside {
+            border-left: 0.25em solid var(--blue);
+            margin-left: 1em;
+            padding: 1em;
             background-color: var(--bg-2);
+
+            &::before {
+                content: '>\00a0';
+            }
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: double var(--blue);
+            &:hover {
+                color: var(--aqua);
+                /* transition: color 0s ease-in-out; */
+                position: relative;
+                top: -1px;
+            }
+            &::after {
+                display: inline-block;
+                content: '\00a0◥' / '';
+                margin-left: -0.25em;
+                font-size: 0.5em;
+                font-weight: 700;
+                translate: 0 -1em;
+            }
+        }
+
+        font-optical-sizing: auto;
+        line-height: 1.5;
+        font-size: 1rem;
+
+        /* colors */
+        color: var(--fg-0);
+        background: var(--bg-0);
+
+        h1 {
+            color: var(--orange);
+        }
+
+        hr {
+            border: 1px solid var(--orange);
+            width: 100%;
+        }
+
+        code {
+            background-color: oklch(from var(--orange) l c h / 0.5);
+            border-radius: 2px;
+        }
+
+        @media (min-width: 750px) {
+            max-width: 750px;
         }
     }
 
-    aside {
-        border-left: 0.25em solid var(--blue);
-        margin-left: 1em;
-        padding: 1em;
-        background-color: var(--bg-2);
-
-        &::before {
-            content: '>\00a0';
+    header {
+        a::after {
+            content: '' / '';
+        }
+        img {
+            height: clamp(4rem, 2.5116rem + 7.4419vw, 6rem);
+            width: auto;
         }
     }
 
-    a {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        p {
+            font-size: 0.5rem;
+            flex-basis: 100%;
+        }
+    }
+
+    .card {
+        background: var(--bg-1);
+        border-radius: 1em;
+        padding: 1rem;
+        min-width: fit-content;
+        hr {
+            border: 1px solid var(--purple);
+        }
+    }
+
+    .red {
+        color: var(--red);
+        font-weight: 500;
+    }
+    .green {
+        color: var(--green);
+        font-weight: 500;
+    }
+    .yellow {
+        color: var(--yellow);
+        font-weight: 500;
+    }
+
+    .blue {
         color: var(--blue);
-        text-decoration: double var(--blue);
-        &:hover {
-            color: var(--aqua);
-            /* transition: color 0s ease-in-out; */
-            position: relative;
-            top: -1px;
-        }
-        &::after {
-            display: inline-block;
-            content: '\00a0◥' / '';
-            margin-left: -0.25em;
-            font-size: 0.5em;
-            font-weight: 700;
-            translate: 0 -1em;
-        }
+        font-weight: 500;
     }
-
-    font-optical-sizing: auto;
-    line-height: 1.5;
-    font-size: 1rem;
-
-    /* colors */
-    color: var(--fg-0);
-    background: var(--bg-0);
-
-    h1 {
+    .purple {
+        color: var(--purple);
+        font-weight: 500;
+    }
+    .aqua {
+        color: var(--aqua);
+        font-weight: 500;
+    }
+    .orange {
         color: var(--orange);
+        font-weight: 500;
+    }
+    .gray {
+        color: var(--gray);
+        font-weight: 500;
     }
 
-    hr {
-        border: 1px solid var(--orange);
-        width: 100%;
+    .red-bg {
+        background-color: var(--red);
+    }
+    .green-bg {
+        background-color: var(--green);
+    }
+    .yellow-bg {
+        background-color: var(--yellow);
     }
 
-    code {
-        background-color: oklch(from var(--orange) l c h / 0.5);
-        border-radius: 2px;
+    .blue-bg {
+        background-color: var(--blue);
     }
-
-    @media (min-width: 750px) {
-        max-width: 750px;
+    .purple-bg {
+        background-color: var(--purple);
     }
-}
-
-header {
-    a::after {
-        content: '' / '';
+    .aqua-bg {
+        background-color: var(--aqua);
     }
-    img {
-        height: clamp(4rem, 2.5116rem + 7.4419vw, 6rem);
-        width: auto;
+    .orange-bg {
+        background-color: var(--orange);
     }
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    p {
-        font-size: 0.5rem;
-        flex-basis: 100%;
+    .gray-bg {
+        background-color: var(--gray);
     }
-}
-
-.card {
-    background: var(--bg-1);
-    border-radius: 1em;
-    padding: 1rem;
-    margin: 1em;
-    min-width: fit-content;
-    hr {
-        border: 1px solid var(--purple);
-    }
-}
-
-.red {
-    color: var(--red);
-    font-weight: 500;
-}
-.green {
-    color: var(--green);
-    font-weight: 500;
-}
-.yellow {
-    color: var(--yellow);
-    font-weight: 500;
-}
-
-.blue {
-    color: var(--blue);
-    font-weight: 500;
-}
-.purple {
-    color: var(--purple);
-    font-weight: 500;
-}
-.aqua {
-    color: var(--aqua);
-    font-weight: 500;
-}
-.orange {
-    color: var(--orange);
-    font-weight: 500;
-}
-.gray {
-    color: var(--gray);
-    font-weight: 500;
-}
-
-.red-bg {
-    background-color: var(--red);
-}
-.green-bg {
-    background-color: var(--green);
-}
-.yellow-bg {
-    background-color: var(--yellow);
-}
-
-.blue-bg {
-    background-color: var(--blue);
-}
-.purple-bg {
-    background-color: var(--purple);
-}
-.aqua-bg {
-    background-color: var(--aqua);
-}
-.orange-bg {
-    background-color: var(--orange);
-}
-.gray-bg {
-    background-color: var(--gray);
 }
