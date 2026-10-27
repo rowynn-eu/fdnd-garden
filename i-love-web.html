@@ -9,34 +9,34 @@
         <style>
             body {
                 overflow-x: hidden;
-            }
-            main {
-                display: grid;
-                grid-template-columns: 1fr 3fr;
-                grid-area: 'nav' 'div';
-                padding-bottom: 1em;
 
-                &:has(article:target) section {
-                    display: none;
+                main {
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                    grid-area: 'nav' 'div';
+                    padding-bottom: 1em;
+
+                    &:has(article:target) section {
+                        display: none;
+                    }
+
+                    ol {
+                        list-style-type: decimal-leading-zero;
+                        padding-left: 1.5em;
+                    }
                 }
-
-                ol {
-                    list-style-type: decimal-leading-zero;
-                    padding-left: 1.5em;
-                }
             }
 
-            nav[aria-label='table-of-contents'] {
+            nav {
                 z-index: 1;
-            }
-
-            nav > ol > li {
-                padding-bottom: 0.5em;
+                > ol > li {
+                    padding-bottom: 0.5em;
+                }
             }
 
             article {
                 display: none;
-                text-wrap-style: pretty;
+                text-wrap: pretty;
                 &:target {
                     display: grid;
                     grid-template-columns: 1fr;
@@ -69,7 +69,7 @@
 
         <main>
             <nav>
-                <h3>Year 1</h3>
+                <strong>Year 1</strong>
                 <ol>
                     <li><a href="#wlw1">18/09</a></li>
                     <li><a href="#wlw2">02/10</a></li>
@@ -85,7 +85,7 @@
                     <li><a href="#wlw12">11/06</a></li>
                 </ol>
 
-                <h3>Year 2</h3>
+                <strong>Year 2</strong>
                 <ol start="13">
                     <li><a href="#wlw13">...</a></li>
                     <li><a href="#wlw14">... </a></li>
