@@ -16,6 +16,45 @@
 
         <style>
             /* meow */
+            hgroup {
+                border-left: 0.25em solid var(--gray);
+                padding-left: 1em;
+            }
+
+            main > ul {
+                display: flex;
+                padding-left: 0;
+                list-style: none;
+                gap: 2em;
+
+                li {
+                    padding: 0.5em;
+                    background-color: var(--bg-1);
+                    border-bottom: 0.1em solid var(--orange);
+                }
+            }
+
+            article {
+                display: none;
+                text-wrap: pretty;
+                &:target {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-color: var(--bg-1);
+                    border-radius: 0.25em;
+                    padding: 1em;
+                }
+            }
+
+            article:nth-of-type(1) {
+                border-left: 0.25em solid var(--red);
+                padding-left: 1em;
+
+                h2,
+                h3 {
+                    color: var(--red);
+                }
+            }
         </style>
     </head>
     <body>
@@ -40,9 +79,15 @@
                     De eindkwalificaties voor de opleiding bestaan uit een leerresultaat met bijbehorende gedragsindicatoren en -criteria.
                     In onderstaande tabel zijn het leerresultaat en de gedragscriteria van de 4 semesters beschreven.
                 </p>
+                <blockquote>Tekst overgenomen van <a href="https://niveaumatrix.fdnd.nl">https://niveaumatrix.fdnd.nl</a></blockquote>
             </hgroup>
-
-            <section>
+            <ul>
+                <li><a href="#s1">Semseter 1</a></li>
+                <li><a href="#s2">Semester 2</a></li>
+                <li><a href="#s3">Semester 3</a></li>
+                <li><a href="#s4">Semester 4</a></li>
+            </ul>
+            <article id="s1">
                 <h2>Semester 1 - Static Web</h2>
                 <p>
                     De student gebruikt fundamentele principes van het web voor het ontwerpen en ontwikkelen van eenvoudige
@@ -87,7 +132,7 @@
                     <p>1.5.2 Maakt aangeboden en zelf gevonden materie eigen en gebruikt dit bij leertaken.</p>
                     <p>1.5.3 Toont beginnend inzicht in eigen capaciteiten en beperkingen en kan deze benoemen.</p>
                 </section>
-            </section>
+            </article>
         </main>
 
         <footer>
