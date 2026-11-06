@@ -206,6 +206,14 @@ becomes
 
 ### Tuesday
 
+I don't believe there was a checkout on this day.
+
 ### Wednesday (Sprint Review)
 
+On this checkout I didn't have the time or convenience to think of feedback I wanted to make and integrate before the sprint review, as it was on that day.
+
+I was too stressed and busy to think of which question I'd like to ask them that I didn't really get the chance to ask all of them. But I did manage to ask a few of them, and that's what is important.
+
 ### Friday
+
+I don't think there was a checkout

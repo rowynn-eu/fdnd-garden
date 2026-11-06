@@ -34,6 +34,8 @@ What I learned this week...
 
 Remember to check out the sources of the workshops this week and to make a note about what each of them are about and what they have.
 
+## Week 2
+
 ### Monday (26 oct)
 
 On monday I was given these four questions:
@@ -50,3 +52,17 @@ On monday I was given these four questions:
 3. Green and red. They're annoying to distinguish, even for those who don't have color blindness.
 
 4. I'd like to strive for AAA for whenever possible, but it may not always be the case depending on what the client wants because it does restrict your colour pallette and require a more thoughtful consideration of the colours.
+
+### Wednesday (28 oct)
+
+On this day we had another checkout, which I missed again. I have my sprint reviews on Wednesdays. Argh how annoying!
+
+A classmate informed me that we had to gave ourselves a note on how we'd handle things differently in the next sprint review, something I had already decided subconsciously to do; I wanted to take it more easy, and ask things in a more natural manner.
+
+Regarding the Readme.MD --- I didn't have the energy to put in as much detail as I had done for the previous sprint. It's tiring, and eats up time that can be spent developing on documentation. I have to find a way for me to do this in a way that's less taxing.
+
+Nor did I have the time to write down the three things I wanted to have feedback on from my client, but that's okay. I got something valuable anyways.
+
+### Friday (30 oct)
+
+We were preparing for our midterm. We didn't have a checkout.
