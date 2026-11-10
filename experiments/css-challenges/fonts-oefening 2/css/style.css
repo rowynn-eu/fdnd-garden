@@ -1,0 +1,106 @@
+/***********************************/
+/* CODE VOOR DE FONTS - @FONT-FACE */
+/***********************************/
+
+/* jouw code hier */
+/* alle fonts (@font-face's) zet je bovenaan je css */
+/* kijk even naar oefening 1 hoe je @font-face gebruikt */
+
+
+
+
+
+/*******************************/
+/* CODE VOOR HET EERSTE BLOKJE */
+/*******************************/
+
+/* hiermee selecteer je de eerste li */
+li:nth-of-type(1) {
+  /* h2 in het midden van de li */
+  /* hoef je nu nog niet te snappen - mag wel ;-) */
+  display:grid;
+  place-items:center;
+	
+	/* jouw code hier */
+	
+}
+
+
+
+/* hiermee selecteer je de h2 in de eerste li */
+li:nth-of-type(1) h2 {
+  /* de h2 wordt zo smal als het langste woord */
+	/* daardoor staat elk woord op een nieuwe regel */
+	width:min-content;
+	/* en dan gecentreerd */
+	text-align:center;
+	
+	/* jouw code hier */
+	
+}
+
+
+
+
+
+/*******************************/
+/* CODE VOOR HET TWEEDE BLOKJE */
+/*******************************/
+
+li:nth-of-type(2) {
+	/* h2 in het midden van de li */
+  display:grid;
+  place-items:center;
+
+	/* jouw code hier */
+	
+} 
+
+
+
+li:nth-of-type(2) h2 {
+  width:min-content;
+	text-align:center;
+	
+	/* jouw code hier */
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  header, main {
+		width:min(100%, 30rem);
+    margin-inline:auto;
+  }
+
+  ul {
+    margin:0;
+    padding:0;
+    list-style-type:"";
+    display:grid;
+    gap:var(--template-size-whitespace);
+  }
+
+  li {
+    height:clamp(14em, 80vw, 18em);
+    background-color:white;
+		border-radius:1em;
+		color:black;
+  } 
+}
