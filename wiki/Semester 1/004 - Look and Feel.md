@@ -63,3 +63,37 @@ I want to double check how layers work how to use the `@layer styleguide, etc`
 Something I really liked that I saw in another team is their use of declaring colors seperately, and then merging them for light-dark so they can be customized later on.
 
 Luckily, we don't have to assign any new issues to anyone, as while they were discussing the team canvas, I worked through every code review that we received.
+
+## Week 2
+
+### Monday
+
+I learned something nice today on the website of 'The Correspondent', where you can make acustom property of the body margin and use it in your CSS. It's inspiring me to make more use of custom properties for streamlined, customizable code that lets you universally make 1 change rather than having to ctrl+f and fix it here and there instead.
+
+Further more...
+
+#### The basic rules for good readable texts:
+
+```css
+font-size: 16px; /* min */
+max-width: 66ch;
+line-height: 1.4; /* higher on dark mode, like 1.6 */
+```
+
+#### Font stack
+
+A way of stacking fonts from high-to-least priority so that the browser knows which one to fallback to. An example...
+
+```css
+font-family: Arial, Helvetica, sans-serif;
+```
+
+It'll load arial first, then helvetica, and lastly sans-serif.
+
+#### @font-face
+
+@font-face is a css at-rule property you can use to laod in custom fonts. It's important to add multiple fallbacks when declaring your src, from woff2, to woff and typefont.
+
+#### CSS units
+
+there's a lot..
