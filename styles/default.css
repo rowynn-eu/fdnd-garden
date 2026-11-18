@@ -167,7 +167,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
         }
 
         code {
-            background-color: oklch(from var(--orange) l c h / 0.5);
+            background-color: oklch(from var(--gray) l c h / 0.25);
             border-radius: 2px;
         }
 
