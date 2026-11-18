@@ -97,3 +97,42 @@ It'll load arial first, then helvetica, and lastly sans-serif.
 #### CSS units
 
 there's a lot..
+
+### Tuesday
+
+I learned a fun quote today. In dutch, it reads "Goed werken is belangrijker dan mooi." Sanne explains it to mean that we as developers, more often than not, break functionality of something by trying to make it 'pretty'. Keeping things functional and working, as a result of that, is more important than 'aesthetics'. Literally translated, it means: 'Good work is better than pretty.'
+
+I also learned a few thigns regarding forms and `<input>`. There's _so_ many.. 22 may seem like it's not a lot, but each of them support attributes and properties that make it rather complex, real quick.
+
+The one thing that really sucked is that I didn't design the styleguide with 'appereance: none' in mind. So it won't work right on all browers, e.g. Safari.
+
+But I hate safari.
+
+Another useful thing... I wasn't aware of all the operators / combinators for the CSS attribute selector. I'll copy and paste the ones here below.
+
+`[attr]`
+Represents elements with an attribute name of attr.
+
+`[attr=value]`
+Represents elements with an attribute name of attr whose value is exactly value.
+
+`[attr~=value]`
+Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.
+
+`[attr|=value]`
+Represents elements with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). It is often used for language subcode matches.
+
+`[attr^=value]`
+Represents elements with an attribute name of attr whose value is prefixed (preceded) by value.
+
+`[attr$=value]`
+Represents elements with an attribute name of attr whose value is suffixed (followed) by value.
+
+`[attr*=value]`
+Represents elements with an attribute name of attr whose value contains at least one occurrence of value within the string.
+
+`[attr operator value i]`
+Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range).
+
+`[attr operator value s]`
+Adding an s (or S) before the closing bracket causes the value to be compared case-sensitively (for characters within the ASCII range).
