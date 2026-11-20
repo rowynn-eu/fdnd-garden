@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="placeholder content....">
+        <meta name="author" content="rowynn-eu">
+
+        <title>forms opdracht - rowynn.eu</title>
+
+        <link rel="stylesheet" href="../styles/default.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <style>
+            form {
+                display: grid;
+                gap: 1em;
+            }
+            section {
+                border-bottom: 1px solid var(--gray);
+                padding-bottom: 1em;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="./">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
+                    <img src="./assets/logo-light.svg" alt="home | rowynn.eu">
+                </picture>
+            </a>
+        </header>
+
+        <main>
+            <hgroup>
+                <h1>Daily Checkout 18/11/26</h1>
+                <p>For today's daily checkout, see the following 5 questions and my answers.</p>
+            </hgroup>
+            <section>
+                <h2>Why does every <code>input</code> need a <code>label</code>?</h2>
+                <p>
+                    For accessibility. You can't rely on just a 'placeholder' in an input element, or else screen readers won't be able to
+                    tell where you are. Besides, there's also the annoying side effect that the moment you start typing, you lose what the
+                    text input is for.
+                </p>
+
+                <div>
+                    <input type="text">
+                    <br>
+                    <label>Text-input: <input type="text"> </label>
+                </div>
+            </section>
+            <section>
+                <h2>
+                    What. can you do with the attributes <code>type</code>, <code>autocomplete</code>, <code>inputmode</code>,
+                    <code>enterkeyhint</code>
+                </h2>
+                <p>
+                    A lot of things. With <code>type</code> you determine what kind of input it is. A button, a text field, a color picker,
+                    etc. With <code>autocomplete</code>, you determine what the browser will prompt the user with, making it more accessible
+                    and easier to fill in the form. With <code>inputmode</code>, you can make it easier what type of text should enteer the
+                    input element, especially on mobile devices in order to prompt the correct keyboard.
+                </p>
+
+                <br>
+                <form action="">
+                    <label>will prompt your e-mail: <input type="email" name="" autocomplete="on"> </label>
+                    <p>(vvv on mobile)</p>
+                    <label>will prompt numbers: <input type="text" inputmode="numeric"> </label>
+                    <label>will prompt phone: <input type="text" inputmode="tel"> </label>
+                    <label>will prompt deicmal: <input type="text" inputmode="decimal"> </label>
+                </form>
+            </section>
+            <section>
+                <h2>What do fieldsets and legends do in a form?</h2>
+                <p>They make it more clear to the user what the form is about.</p>
+
+                <fieldset>
+                    <legend>Login</legend>
+                    <form action="">
+                        <label for=""> Username: <input type="email" name="" id=""> </label>
+                        <label for=""> Password: <input type="password" name="" id=""> </label>
+                    </form>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>What does <code>required</code>, <code>maxlength</code>, <code>min</code> and <code>max</code> do?</h2>
+                <p></p>
+            </section>
+
+            <section>
+                <h2>Input pseudo CSS selectors demo</h2>
+                <p>I'll get back to this later.</p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
+    </body>
+</html>

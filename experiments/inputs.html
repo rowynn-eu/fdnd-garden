@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="placeholder content....">
+        <meta name="author" content="rowynn-eu">
+
+        <title>placeholder - rowynn.eu</title>
+
+        <link rel="stylesheet" href="../styles/default.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <style>
+            form {
+                display: grid;
+                > * {
+                    margin: 0.5rem;
+                    * {
+                        padding: 0.5rem;
+                    }
+                }
+
+                > *:blank {
+                    &::after {
+                        content: ':3' / 'A smile';
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="./">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
+                    <img src="./assets/logo-light.svg" alt="home | rowynn.eu">
+                </picture>
+            </a>
+        </header>
+
+        <main>
+            <form action="">
+                <textarea name=""></textarea>
+                <label> button: <input type="button"> this is a button </label>
+                <label> checkbox: <input type="checkbox" name=""> </label>
+                <label> color: <input type="color" name=""> </label>
+                <label> date: <input type="date"> </label>
+                <label> datetime-local: <input type="datetime-local" name=""> </label>
+                <label> e-mail: <input type="email" name=""> </label>
+                <label> file: <input type="file" name=""> </label>
+                <label> hidden: <input type="hidden" name=""> </label>
+                <label> image: <input type="image" src="" alt=""> </label>
+                <label> month: <input type="month" name=""> </label>
+                <label> number: <input type="number" name=""> </label>
+                <label> password: <input type="password" name=""> </label>
+                <label> radio: <input type="radio" name=""> </label>
+                <label> range: <input type="range" name=""> </label>
+                <label> reset: <input type="reset" value=""> </label>
+                <label> search: <input type="search" name=""> </label>
+                <label> submit: <input type="submit" value=""> </label>
+                <label> tel: <input type="tel" name=""> </label>
+                <label> text: <input type="text" name=""> </label>
+                <label> time: <input type="time" name=""> </label>
+                <label> url: <input type="url" name=""> </label>
+                <label> week: <input type="week" name=""> </label>
+            </form>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
+    </body>
+</html>
