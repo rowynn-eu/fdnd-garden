@@ -136,3 +136,21 @@ Adding an i (or I) before the closing bracket causes the value to be compared ca
 
 `[attr operator value s]`
 Adding an s (or S) before the closing bracket causes the value to be compared case-sensitively (for characters within the ASCII range).
+
+### Wednesday
+
+See this experiment page (forms-types-and-attributes.html)
+
+### Friday
+
+1. Did you make enough use of the shared stylesheet?
+   Yes.
+
+2. Note 2 examples of how you use cascade.
+   I use cascade in my `base--remedy.css`, and even declare the difference layers and their specificity.
+
+3. Note 3 custom properties that you use in your own project.
+
+4. Did you find any improvements in the code/design review today that you can use for everything else?
+
+Add a DoD...
