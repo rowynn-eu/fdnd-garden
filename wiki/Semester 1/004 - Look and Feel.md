@@ -154,3 +154,17 @@ See this experiment page (forms-types-and-attributes.html)
 4. Did you find any improvements in the code/design review today that you can use for everything else?
 
 Add a DoD...
+
+## Week 3
+
+The final sprint is coming up again for this week. >.<
+
+### Monday
+
+Gestalt Law of Proximity sources:
+[UXLAW: Law of Proximity](https://lawsofux.com/law-of-proximity/)
+[NN Group](https://www.nngroup.com/articles/gestalt-proximity/)
+
+I want to get the hang of auditing my work based on the gestalt principles, and maybe find a way to get a checklist like it somewhere...
+
+Note to self: add other notes from journal here.
