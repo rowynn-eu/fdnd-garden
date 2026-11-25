@@ -266,6 +266,37 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/li
     .gray-bg {
         background-color: var(--gray);
     }
+
+    .note {
+        border-bottom: 0.25em solid var(--gray);
+    }
+    .note-orange {
+        border-bottom: 0.25em solid var(--orange);
+    }
+
+    .note-red {
+        border-bottom: 0.25em solid var(--red);
+    }
+
+    .note-green {
+        border-bottom: 0.25em solid var(--green);
+    }
+
+    .note-yellow {
+        border-bottom: 0.25em solid var(--yellow);
+    }
+
+    .note-blue {
+        border-bottom: 0.25em solid var(--blue);
+    }
+
+    .note-purple {
+        border-bottom: 0.25em solid var(--purple);
+    }
+
+    .note-aqua {
+        border-bottom: 0.25em solid var(--aqua);
+    }
 }
 
 .carousel {
