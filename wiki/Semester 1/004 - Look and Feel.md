@@ -168,3 +168,15 @@ Gestalt Law of Proximity sources:
 I want to get the hang of auditing my work based on the gestalt principles, and maybe find a way to get a checklist like it somewhere...
 
 Note to self: add other notes from journal here.
+
+### Woensdag
+
+Today I had a technical question which I had asked to both Mathijs Nijhof, and Krijn Hoetmer.
+
+I was trying to make a script in JavaScript that invovled the URL's parameters and to get a shareable link in the design that would allow someone to share it with someone else to get the exact icon that they were looking for.
+
+Matthijs gave me a script that was working, and adjusting the paramter with each keystroke, but Krijn told me it's overkill and not recommended for what we are doing right now and you're better off keeping it simple. In sprint 6 I'll be able too experiment with more of that.\
+
+So.... there goes the cool idea i had.
+
+The solution is here: [link](view-source:rowynn-eu.github.io/fdnd-gi-look-and-feel-corporate-identity/iconen.html)
