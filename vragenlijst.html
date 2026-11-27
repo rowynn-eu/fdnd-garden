@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Vragenlijst over vooruitgang binnen FDND">
+        <meta name="author" content="rowynn-eu">
+
+        <title>Vragenlijsten - rowynn.eu</title>
+
+        <link rel="stylesheet" href="./styles/default.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <style>
+            /* meow */
+
+            hgroup {
+                div:nth-of-type(1) {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    place-items: center;
+                }
+                div:nth-of-type(2) {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+
+                    gap: 1em;
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: 0.9em;
+                        color: var(--fg-0);
+                        background-color: var(--bg-1);
+
+                        &:hover {
+                            color: var(--bg-0);
+                            background-color: var(--fg-1);
+                        }
+
+                        &::after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+            &:has(article:target) section {
+                display: none;
+            }
+
+            article {
+                display: none;
+                text-wrap: pretty;
+
+                &:target {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    background-color: var(--bg-1);
+                    border-radius: 0.25em;
+                    padding: 1em;
+                }
+
+                & > hr,
+                li > hr {
+                    border: 1px solid var(--gray);
+                }
+                li {
+                    overflow-wrap: anywhere;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="./">
+                <picture>
+                    <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.svg">
+                    <img src="./assets/logo-light.svg" alt="home | rowynn.eu">
+                </picture>
+            </a>
+        </header>
+
+        <main>
+            <hgroup>
+                <h1>Vragenlijsten</h1>
+                <p>Op grond van de volgende score systeem kan ik mezelf beoordelen hoe goed ik het materiaal snap.</p>
+                <p>
+                    Rood houdt in dat ik het helemaal niet begrijp, terwijl een vraag met een groene cirkel houdt in dat ik het helemaal
+                    begrijpt.
+                </p>
+                <div>
+                    <p>🔴 | 0 points</p>
+                    <p>🟠 | 1 point</p>
+                    <p>🟡 | 2 points</p>
+                    <p>🟢 | 3 points</p>
+                </div>
+                <div>
+                    <p><a class="note-red" href="#sprint-a">SPRINT 4</a></p>
+                    <p><a class="note-orange" href="#sprint-b">Sprint ?</a></p>
+                    <p><a class="note-green" href="#sprint-c">Sprint ??</a></p>
+                    <p><a class="note-yellow" href="#sprint-d">Sprint ???</a></p>
+                    <p><a class="note-blue" href="#sprint-e">Sprint ????</a></p>
+                </div>
+            </hgroup>
+            <article id="sprint-a">
+                <h2>Sprint 4 - 27/11/26</h2>
+                <p>Totale punten: 48</p>
+                <hr>
+                <ol>
+                    <!-- MARK: 1. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe ik met GitHub iteratief kan werken, gebruik issues en sub-issues, en ik kan uitleggen wat een
+                            fork, clone, commit, push, pull, merge en conflict inhouden.
+                        </h3>
+                        <p>
+                            Met GitHub kan je issues aanmaken, het een label geven, en het gebruiken als bewijslast voor het werk wat je
+                            hebt gemaakt. Om dit te kunnen doen, moet je eerst een respository maken, dit doe je door de leertaak te forken,
+                            en daarna het te clonen naar je eigen computer zodat je kan beginnen met het schrijven van code.
+                        </p>
+                        <p>
+                            Telkens als je klaar bent met een taak, kan je een commit maken (en koppelen met een # aan een issue). Wanneer
+                            je bereide ben, kan jij je werk pushen, live zetten, en testen. Zo volg je het DLC.
+                        </p>
+                        <p><strong>Voorbeeld:</strong> <a href="/history.html">Bekijk mijn werk.</a></p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 2. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet van HTML wat elementen, tags en attributen zijn, en hoe ik mijn HTML kan valideren, en van CSS wat
+                            selectors, properties, values, units en combinators zijn.
+                        </h3>
+                        <p>
+                            Elementen bevatten content en zijn omringd met <q>tags</q>. Die tags kunnen attributen hebben, zoals
+                            <q>href=""</q>.
+                        </p>
+                        <p>
+                            In CSS, zijn selectors de manier welke HTML element je wilt aanpassen en het vormgeving geven. Met properties
+                            geef je aan <em>wat</em> precies veranderd, en met values/units geef je de waarde aan wat veranderd wordt.
+                            Verder zijn combinators een handig manier om wat specifieker te zijn welke element(en) je wilt aanpassen.
+                        </p>
+                        <p>
+                            <strong>Voorbeeld:</strong> Druk op <q>CMD+U</q> / <q>CTRL+U</q> of rechtermuis om de context-menu te bekijken
+                            en de source code van deze pagina te lezen.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 3. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe ik Figma kan gebruiken om te variëren, hoe ik interactieve prototypes kan maken, en ik kan
+                            inschatten op welk moment ik verder ga in code.
+                        </h3>
+                        <p>
+                            Ja zeker, ik weet hoe ik interactieve prototpyes moet maken met Figma. Het is een hele fijne tool om snel een
+                            schets of prototype te maken en kleine aanpassingen te doen zonder dat je code hoeft te schrijven.
+                        </p>
+                        <p>
+                            Op het moment dat het ontwerp er 'strak' eruit ziet, dan ga ik het process beginnen om het ontwerp in HTMl en
+                            CSS te verwerken.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 4. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet alle Layout Modes in CSS en eigenschappen van elke te benoemen, kan van (onderdelen van) een ontwerp
+                            bepalen welke ik inzet, en ze toepassen en combineren.
+                        </h3>
+                        <p>De layout modes zijn...</p>
+                        <ul>
+                            <li>Position</li>
+                            <li>Flex</li>
+                            <li>Grid</li>
+                            <li>Float</li>
+                            <li>Block</li>
+                            <li>Inline</li>
+                        </ul>
+                        <p>
+                            Maar eerlijk gezegd, terwijl ik ze wel ken en hoe je ze moet inzetten bij een ontwerp (vanwege de layout modes
+                            opdracht), gebruk ik alleen maar grid, flex en position, en ook in die volgorde.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 5. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet wat de WCAG richtlijnen zijn, hoe ik een WCAG audit met automatische en handmatige tests doe, en hoe
+                            ik testresultaten kan verwerken.
+                        </h3>
+                        <p>
+                            Ik weet hoe ik een WCAG audit moet doen, zeker met hulp van de We Love Web van Ischa Gast. Toegankelijkheid is
+                            vet.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 6. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe ik met alleen HTML een prototype van (een deel van) een ontwerp maak, en waarom een robuust
+                            fundament belangrijk is, voordat ik volgende lagen toevoeg.
+                        </h3>
+                        <p>
+                            Ja, want je begint met je HTMl, daarna CSS en daarna ga jij je interacties maken. Het is verstanding om zo veel
+                            mogelijk met native HTML te doen, zodat je geen
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 7. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe ik Mobile First ontwerp en ontwikkel, hoe ik dat kan herkennen in mijn CSS, hoe CSS nesting
+                            hierbij kan helpen, en wat het voordeel is van deze manier.
+                        </h3>
+                        <p>
+                            Mobile First ontwerpen is belangrijk, want als je daarmee begint, is het makkleijker om daaruit een desktop
+                            versie te maken. Verder, met CSS nesten, en je media queries per elementen te nesten, kan je makkelijker
+                            aanpassingen maken voor mobile.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 8. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet verschillende regels voor leesbaarheid van tekst, hoe ik de typografie kan aanpassen met CSS, en
+                            welke properties en units ik wanneer in kan zetten.
+                        </h3>
+                        <p>
+                            Een regellengte van minimaal 140%, maar liefst 150% (want het is WCAG complaint), en minimum pixelgroote van
+                            16px, maximum regellengte van 60ch en het liefst werken met rem of em, of iedergeval een consistente unit
+                            waarde.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 9. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe kleurcontrast te maken heeft met visuele hiërarchie én met toegankelijkheid, en hoe ik dit kan
+                            testen en verbeteren.
+                        </h3>
+                        <p>
+                            Kleuren die we zien als helder kunnen beter boven aan staan, en gebruiken als een manier om snel aandacht te
+                            trekken.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 10. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet hoe ik een duidelijke Readme en Wiki kan opleveren, hoe ik Markdown hierin toe kan passen, hoe ik
+                            mijn werk aan een opdrachtgever presenteer tijdens een Sprint Review en hoe ik inhoudelijke feedback kan
+                            krijgen.
+                        </h3>
+                        <p>Ik weet hoe ik een duidelijke readme moet maken.</p>
+                        <p>
+                            Voorbeeld:
+                            <a
+                                href="https://github.com/rowynn-eu/fdnd-gi-look-and-feel-corporate-identity/blob/main/README.md"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >README.md</a
+                            >
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 11. -->
+                    <li>
+                        <h3>
+                            🟡 Ik weet wat in CSS specificity, cascade en inheritance betekenen, en kan deze onderwerpen via een schets
+                            uitleggen aan iemand anders.
+                        </h3>
+                        <p>
+                            Ik weet wat CSS specificity, cascade, en inheritance is, en ik kan (met tijd) het uitleggen aan een ander, maar
+                            ik haal ze zelfstandig nog steeds wel door elkaar.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 12. -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet verschillende Gestalt wetten te benoemen en kan ze inzetten om ontwerpen beter (of slechter) te
+                            maken.
+                        </h3>
+                        <p>
+                            Vanuit CMD moest ik het boek Beeldtaal lezen waar ik al in aanmerking kwam met de Gestsalt principes. Daardoor
+                            weet ik hoe ik ze kan inzetten om ontwerpen te verbeteren of slechter te maken.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 13. -->
+                    <li>
+                        <h3>
+                            🟡 Ik weet hoe ik in HTML formulieren en formulierelementen maak, hoe ik validatieregels in HTML attributen
+                            meegeef, hoe ik verschillende states kan stylen met CSS en wat het verschil is tussen een placeholder en een
+                            label.
+                        </h3>
+                        <p>
+                            Ik ben niet zo goed in het maken of customizen van formulieren in HTMl. Met begeleiding kan ik het zeker doen,
+                            maar het is niet perfect.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 14 -->
+                    <li>
+                        <h3>
+                            🟢 Ik weet wat Custom Properties in CSS zijn, waarom ze zo heten, hoe je ze gebruikt en dynamisch inzet, en hoe
+                            ze samenwerken met specificity, cascade en inheritance.
+                        </h3>
+                        <p>
+                            Custom properties, variablen, design tokens... Hoe je ze ook wilt noemen ze hebben allemaal een functie: Om je
+                            werk soepeler te maken zodat je minder hetzelfde steeds hoeft te typen.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 15. -->
+                    <li>
+                        <h3>
+                            🟠 Ik weet de basis van programmeren, zoals variabelen, functies, loops en data types, en ik weet wat het
+                            verschil is tussen een imperatieve taal en een declaratieve taal.
+                        </h3>
+                        <p>
+                            Ik kom niet verder zonder een tutorial. Ik snap wel de logica tussen variabelen, functies, loops en data types,
+                            maar verder dan dat weet ik het niet zeker.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 16. -->
+                    <li>
+                        <h3>
+                            🟡 Ik weet wat keyframe animaties in CSS zijn, hoe je ze kunt gebruiken, hoe ze verschillen van transitions, en
+                            wanneer je wat inzet.
+                        </h3>
+                        <p>
+                            Ik heb wel een paar keyframe animaties gemaakt en ik snap hoe je ze het goed kunnen gebruiken, maar ik heb wel
+                            altijd de nijging om snel te kijken op MDN of het wel helemaal klopt.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 17. -->
+                    <li>
+                        <h3>
+                            🟡 Ik weet het verschil tussen feedback en feedforward in een User Interface, hoe die samenwerken, en hoe
+                            duidelijke labels de User Interface beter kunnen maken.
+                        </h3>
+                        <p>
+                            Vanuit CMD heb ik deze soft-skills meegekregen, maar het is al weer een tijdje geleden geweest, en soms is mijn
+                            manier van feedback / feedforward geven in een ontwerp niet helemaal consistent. Ik moeth iet nog beter in
+                            worden.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 18. -->
+                    <li>
+                        <h3>
+                            🟡 Ik weet wat een gebruikerstest is, hoe je deze voorbereidt, en hoe je met een user story, testplan, scenario
+                            en observeren tot bruikbare testresultaten komt.
+                        </h3>
+                        <p>
+                            Ik weet wat een gebruikrstest is vanwege CMD, maar ik heb nog geen gemaakt tijdens mijn studie hier en het is
+                            best wel vaag.
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 19. -->
+                    <li>
+                        <h3>
+                            🟠 Ik weet hoe ik in JavaScript via het Document Object Model met querySelector, addEventListener en classList
+                            micro-interacties toe kan voegen aan mijn website.
+                        </h3>
+                        <p>
+                            Vanwege Sanne weet ik wel hoe je dit moet doen en moet zoeken in de DOM, en heb een hamburger menu en
+                            donker/light thema kunnen maken, maar het is niet perfect. Ik kan het niet zelfstsandig doen en moet een
+                            tutorial volgen.
+                        </p>
+                        <p>
+                            Voorbeeld:
+                            <a
+                                href="https://rowynn-eu.github.io/fdnd-gi-look-and-feel-corporate-identity/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Laatste project werk</a
+                            >
+                        </p>
+                        <hr>
+                    </li>
+                    <!-- MARK: 20. -->
+                    <li>
+                        <h3>
+                            🔴 Ik weet wat UI events en event properties zijn, hoe ik verschillende UI events in JavaScript kan gebruiken,
+                            en wat een callback functie is.
+                        </h3>
+                        <hr>
+                    </li>
+                </ol>
+            </article>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./wiki.html">/wiki</a>
+                <a href="./links.html">/links</a>
+                <a href="./sitemap.html">/sitemap</a>
+                <a href="./enby.html">/enby</a>
+                <a href="./about.html">/about</a>
+            </nav>
+        </footer>
+    </body>
+</html>
